@@ -1,0 +1,1109 @@
+M	N	STAGE	T	AGE	SEX	OS_STATUS	OS_MONTHS	DFS_MONTHS	DFS_STATUS
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	10.28	10.28	0:DiseaseFree
+MX	N3	Stage IIIC	T3	59	Female	0:LIVING	26.02	26.02	0:DiseaseFree
+MX	N2a	Stage IIIA	T2	70	Female	1:DECEASED	5.65	NA	
+M0	N1	Stage IIB	T2	42	Female	0:LIVING	40.47	40.47	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	69	Female	0:LIVING	24.47	24.47	0:DiseaseFree
+M0	N0	Stage I	T1	61	Female	0:LIVING	97.77	97.77	0:DiseaseFree
+M0	N2	Stage IIIA	T2	50	Female	0:LIVING	85.58	85.58	0:DiseaseFree
+MX	N1a	Stage IIB	T2	80	Female	0:LIVING	12.19	12.19	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	59	Female	0:LIVING	32.98	32.98	0:DiseaseFree
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	160.78	160.78	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	79	Female	0:LIVING	35.45	35.45	0:DiseaseFree
+M0	N0	Stage IIA	T2	41	Female	0:LIVING	25.79	25.79	0:DiseaseFree
+M0	N1a	Stage IIB	T2	49	Female	0:LIVING	14.78	14.78	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	62	Female	0:LIVING	10.58	10.58	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	64	Female	0:LIVING	50.82	50.82	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	64	Female	0:LIVING	56.9	56.9	0:DiseaseFree
+M0	N0	Stage IIA	T2	58	Female	0:LIVING	36.17	36.17	0:DiseaseFree
+M0	N0	Stage IIA	T2	85	Female	0:LIVING	45.04	45.04	0:DiseaseFree
+M0	N1a	Stage IIB	T2	79	Female	0:LIVING	44.78	44.78	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	54	Female	0:LIVING	67.81	67.81	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	36	Female	0:LIVING	17.05	17.05	0:DiseaseFree
+M0	N1b	Stage IIB	T2	78	Female	1:DECEASED	38.57	NA	
+M0	N1a	Stage IIB	T2	53	Female	0:LIVING	39.52	39.52	0:DiseaseFree
+M0	N1	Stage IIA	T1c	49	Female	1:DECEASED	32.56	28.22	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	49	Female	0:LIVING	13.9	13.9	0:DiseaseFree
+MX	N1a	Stage IIIA	T3	71	Female	0:LIVING	31.34	31.34	0:DiseaseFree
+M0	N2	Stage III	T3	62	Female	1:DECEASED	54.17	42.84	1:Recurred/Progressed
+MX	N0	Stage IA	T1b	48	Female	0:LIVING	40.08	40.08	0:DiseaseFree
+M0	N2	Stage IIIA	T2	70	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+MX	N0	Stage IIA	T2	74	Female	0:LIVING	19.32	19.32	0:DiseaseFree
+M0	N1a	Stage IIIB	T4b	86	Female	0:LIVING	14.72	14.72	0:DiseaseFree
+M0	N1	Stage IIIA	T3	27	Female	0:LIVING	98.26	98.26	0:DiseaseFree
+M0	N2	Stage IIIA	T2	47	Female	1:DECEASED	83.8	52.86	1:Recurred/Progressed
+M0	N0 (i-)	Stage I	T1c	50	Female	0:LIVING	115.6	115.6	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	47	Female	0:LIVING	74.93	76.54	1:Recurred/Progressed
+MX	N2a	Stage IIIA	T2	53	Female	0:LIVING	22.31	22.31	0:DiseaseFree
+M0	N1	Stage IIB	T2	59	Female	0:LIVING	17.51	17.51	0:DiseaseFree
+M0	N1	Stage IIB	T2	75	Female	0:LIVING	41.59	41.59	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	46	Female	0:LIVING	21.29	21.29	0:DiseaseFree
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	9.99	9.99	0:DiseaseFree
+M0	N0	Stage IIA	T2	59	Female	0:LIVING	15.44	15.44	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	56	Female	0:LIVING	36.83	36.83	0:DiseaseFree
+M0	N0	Stage IIA	T2	84	Female	0:LIVING	14.72	14.72	0:DiseaseFree
+MX	N1a	Stage IIB	T2	66	Female	0:LIVING	15.47	15.47	0:DiseaseFree
+M0	N1	Stage IIA	T1c	68	Female	1:DECEASED	91.92	NA	
+M0	N1c	Stage IIA	T1a	80	Female	1:DECEASED	25.79	NA	
+MX	N0	Stage IIB	T3	68	Female	0:LIVING	16.03	16.03	0:DiseaseFree
+M0	N0	Stage IIB	T3	77	Female	1:DECEASED	30.98	NA	
+M0	N3	Stage IIIB	T4b	69	Female	0:LIVING	9	9	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	69	Female	0:LIVING	15.14	15.14	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	63	Female	0:LIVING	98.19	98.19	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	62	Female	0:LIVING	10.78	10.78	0:DiseaseFree
+M0	N1	Stage IIB	T2	53	Female	0:LIVING	12.48	12.48	0:DiseaseFree
+M0	N1	Stage IIA	T1c	69	Female	0:LIVING	24.54	24.54	0:DiseaseFree
+M0	N1	Stage IIB	T2	54	Female	0:LIVING	38.93	38.93	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	59	Female	0:LIVING	32.52	26.22	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	53	Female	0:LIVING	25.2	25.2	0:DiseaseFree
+				NA			NA	NA	
+M0	N0 (i-)	Stage IA	T1c	77	Female	0:LIVING	23.88	23.88	0:DiseaseFree
+M0	N0	Stage IA	T1b	58	Female	0:LIVING	18.86	18.86	0:DiseaseFree
+M0	N3	Stage IIIC	T2	43	Female	0:LIVING	43.53	43.53	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	41	Female	0:LIVING	44.38	44.38	0:DiseaseFree
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	82.56	82.56	0:DiseaseFree
+M0	N1b	Stage IIB	T2	46	Female	1:DECEASED	216.59	214.72	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	55	Female	0:LIVING	11.76	11.76	0:DiseaseFree
+M0	N2	Stage IIIA	T2	82	Female	0:LIVING	13.5	13.5	0:DiseaseFree
+M0	N1a	Stage IIB	T2	77	Female	0:LIVING	23.09	23.09	0:DiseaseFree
+M0	N1a	Stage IIB	T2	45	Female	0:LIVING	91	91	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	51	Female	0:LIVING	275.66	275.66	0:DiseaseFree
+M0	N1mi	Stage IIA	T1c	56	Female	0:LIVING	77.69	77.69	0:DiseaseFree
+M1	N1	Stage IV	T3	50	Female	1:DECEASED	37.84	32.65	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	21.75	21.75	0:DiseaseFree
+M0	N2	Stage IIIA	T2	67	Female	0:LIVING	5.32	5.32	0:DiseaseFree
+M0	N0	Stage I	T1	73	Female	0:LIVING	61.47	61.47	0:DiseaseFree
+MX	N1a	Stage IIIA	T3	73	Female	0:LIVING	27.89	22.37	1:Recurred/Progressed
+MX	N3a	Stage IIIC	T2	49	Female	0:LIVING	32.49	32.49	0:DiseaseFree
+M0	N0	Stage I	T1c	60	Female	0:LIVING	13.01	13.01	0:DiseaseFree
+M0	N1a	Stage IIB	T2	62	Female	0:LIVING	13.24	13.24	0:DiseaseFree
+M0	NX	Stage IIA	T2	90	Female	1:DECEASED	5.72	NA	
+M0	N0	Stage IIB	T3	84	Female	0:LIVING	1.02	1.02	0:DiseaseFree
+MX	N0	Stage IIA	T2	61	Female	0:LIVING	58.57	58.57	0:DiseaseFree
+M0	N1	Stage IIA	T1	78	Female	0:LIVING	17.77	17.77	0:DiseaseFree
+M0	N1b	Stage IIIB	T4b	53	Female	1:DECEASED	31.5	NA	
+M0	N1a	Stage IIB	T2	65	Female	0:LIVING	18.96	18.96	0:DiseaseFree
+M0	N2a	Stage IIIB	T4b	83	Female	0:LIVING	25	25	0:DiseaseFree
+MX	N1a	Stage IIIA	T3	80	Female	1:DECEASED	9.92	NA	
+M0	N1mi	Stage IB	T1c	34	Female	0:LIVING	83.48	83.48	0:DiseaseFree
+M0	N1b	Stage IIB	T2	56	Female	1:DECEASED	55.58	NA	
+M0	N1	Stage IIIA	T3	65	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	47	Female	0:LIVING	10.71	10.71	0:DiseaseFree
+M0	N2	Stage IIIA	T2	36	Female	0:LIVING	2.96	2.96	0:DiseaseFree
+M0	N2a		T2	51	Female	0:LIVING	20.86	20.86	0:DiseaseFree
+MX	N1a	Stage IIA	T1c	54	Female	0:LIVING	18.96	18.96	0:DiseaseFree
+M0	N0	Stage IA	T1c	46	Female	0:LIVING	52.69	52.69	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2	52	Female	0:LIVING	22.08	22.08	0:DiseaseFree
+MX	N3	Stage IIIC	T2	51	Female	0:LIVING	34.92	34.92	0:DiseaseFree
+M0	N0	Stage IIA	T2	70	Female	0:LIVING	13.3	13.3	0:DiseaseFree
+M0	N0	Stage I	T1c	59	Female	0:LIVING	76.54	76.54	0:DiseaseFree
+M0	N0	Stage I	T1c	47	Female	0:LIVING	88.99	87.84	1:Recurred/Progressed
+M0	N0	Stage I	T1c	59	Female	0:LIVING	106.67	106.67	0:DiseaseFree
+M0	N0	Stage IIA	T2	68	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0	Stage IIA	T2	48	Female	0:LIVING	9.36	9.36	0:DiseaseFree
+MX	N1	Stage IIIA	T3	51	Female	0:LIVING	23.49	23.49	0:DiseaseFree
+MX	N2a	Stage IIIA	T2	61	Female	0:LIVING	24.77	24.77	0:DiseaseFree
+MX	N0	Stage IA	T1c	71	Female	0:LIVING	42.74	42.74	0:DiseaseFree
+M0	N3	Stage IIIC	T2	79	Female	0:LIVING	40.93	40.93	0:DiseaseFree
+M0	N0	Stage I	T1	64	Female	0:LIVING	86.37	86.37	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1	54	Female	0:LIVING	80.22	80.22	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	52	Female	0:LIVING	56.77	56.77	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	39	Female	1:DECEASED	63.07	48.29	1:Recurred/Progressed
+M0	N0	Stage I	T1c	37	Female	0:LIVING	60.94	60.94	0:DiseaseFree
+M0	N0	Stage IIA	T2	84	Female	0:LIVING	11.99	11.99	0:DiseaseFree
+M0	N0	Stage IA	T1c	48	Female	0:LIVING	44.97	44.97	0:DiseaseFree
+M1	N2		T2	43	Female	1:DECEASED	107.16	43.13	1:Recurred/Progressed
+MX	N3a	Stage IIIC	T3	62	Female	1:DECEASED	86.6	82	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	64	Female	0:LIVING	18.79	18.79	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	26.94	26.94	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	40	Female	1:DECEASED	24.77	12.55	1:Recurred/Progressed
+M0	NX	Stage X	T1	46	Female	1:DECEASED	24.61	24.51	1:Recurred/Progressed
+M0	N0 (i+)	Stage IIA	T2	61	Female	0:LIVING	22.34	22.34	0:DiseaseFree
+MX	NX	Stage X	TX	57	Female	1:DECEASED	77.96	NA	
+M0	N1	Stage IIB	T2	45	Female	0:LIVING	87.16	87.16	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	50	Female	0:LIVING	16.46	16.46	0:DiseaseFree
+MX	N0	Stage IA	T1c	69	Female	0:LIVING	34.26	34.26	0:DiseaseFree
+M0	N0	Stage IA	T1	64	Female	0:LIVING	28.12	28.12	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	48	Female	0:LIVING	30.95	30.95	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	29	Female	0:LIVING	61.3	61.3	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	41	Female	0:LIVING	40.37	3.02	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	48	Female	0:LIVING	10.91	10.91	0:DiseaseFree
+MX	N1a	Stage IIB	T2	61	Female	0:LIVING	29.53	26.12	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	50	Female	0:LIVING	32.88	32.88	0:DiseaseFree
+M0	N1	Stage IIIA	T3	52	Female	0:LIVING	98.26	98.26	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	48	Female	0:LIVING	48.42	48.42	0:DiseaseFree
+M0	N1	Stage IIB	T2	73	Female	0:LIVING	65.31	65.31	0:DiseaseFree
+M0	N0	Stage IIA	T2	76	Female	0:LIVING	18.2	18.2	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	48	Female	0:LIVING	2.5	2.5	0:DiseaseFree
+M0	N1b	Stage IIB	T2	62	Female	1:DECEASED	28.25	23.52	1:Recurred/Progressed
+MX	NX	Stage X	T1c	58	Female	1:DECEASED	97.4	NA	
+M0	N0	Stage IIA	T2	67	Female	0:LIVING	13.83	13.83	0:DiseaseFree
+MX	NX	Stage X	T1c	45	Female	1:DECEASED	84.53	46.39	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	62	Female	0:LIVING	73.78	73.78	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	51	Female	0:LIVING	1.94	1.94	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	46	Female	0:LIVING	53.09	53.09	0:DiseaseFree
+M0	N1	Stage IIB	T2	44	Female	0:LIVING	48.49	48.49	0:DiseaseFree
+MX	N1	Stage IIA	T1c	40	Female	0:LIVING	36.33	36.33	0:DiseaseFree
+M0	N1a	Stage IIB	T2	42	Female	0:LIVING	69.78	69.78	0:DiseaseFree
+M1	N0	Stage IV	T2	63	Female	0:LIVING	48.32	48.32	0:DiseaseFree
+				NA			NA	NA	
+M0	N0	Stage IIB	T3	85	Female	1:DECEASED	114.72	NA	
+M0	N0 (i-)	Stage IIA	T2	60	Female	0:LIVING	67.28	67.28	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	58	Female	0:LIVING	11.76	11.76	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	41	Female	0:LIVING	52.69	52.69	0:DiseaseFree
+MX	N0	Stage IIA	T2	48	Female	0:LIVING	52.92	52.92	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	62	Female	0:LIVING	17.35	17.35	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	62	Female	0:LIVING	18.89	18.89	0:DiseaseFree
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	40.08	40.08	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	66	Female	0:LIVING	10.58	10.58	0:DiseaseFree
+MX	N0	Stage IIB	T3	58	Female	0:LIVING	33.02	33.02	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2a	66	Female	0:LIVING	11.4	11.4	0:DiseaseFree
+M0	N1mi	Stage IIIA	T3	47	Female	0:LIVING	39.62	39.62	0:DiseaseFree
+M0	N1a	Stage IIB	T2	78	Female	0:LIVING	49.9	49.9	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	48	Female	0:LIVING	90.9	90.9	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	63	Female	0:LIVING	9.46	9.46	0:DiseaseFree
+MX	NX	Stage X	T2	90	Female	1:DECEASED	50.66	NA	
+M0	N2	Stage IIIA	T2	55	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	39	Female	0:LIVING	18.59	18.36	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	80	Female	0:LIVING	110.51	110.51	0:DiseaseFree
+M0	N1	Stage IIIB	T4b	57	Female	0:LIVING	139.06	139.06	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	71	Female	0:LIVING	12.32	12.32	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	52	Female	0:LIVING	71.94	71.94	0:DiseaseFree
+M0	N1	Stage IIB	T2	67	Female	0:LIVING	43.56	43.56	0:DiseaseFree
+M0	N0	Stage IIA	T2	52	Female	0:LIVING	75.92	75.92	0:DiseaseFree
+M0	N1a	Stage IIB	T2	58	Female	0:LIVING	21.02	21.02	0:DiseaseFree
+M0	N0	Stage IIA	T2	53	Female	0:LIVING	0.16	0.16	0:DiseaseFree
+M0	N0	Stage IA	T1c	73	Female	0:LIVING	20.99	20.99	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	70	Female	0:LIVING	28.75	28.75	0:DiseaseFree
+MX	N0	Stage IIA	T2	75	Female	0:LIVING	14.06	14.06	0:DiseaseFree
+M0	N2	Stage IIIA	T2	72	Female	0:LIVING	39.68	39.68	0:DiseaseFree
+M0	N1a	Stage IIB	T2	58	Male	0:LIVING	81.67	81.67	0:DiseaseFree
+M0	N3a	Stage IIIC	T4d	43	Female	0:LIVING	42.97	12.02	1:Recurred/Progressed
+MX	N3a	Stage X	T4b	76	Female	0:LIVING	9.99	9.99	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	66	Female	1:DECEASED	63.3	NA	
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	21.71	21.71	0:DiseaseFree
+M1	N2a	Stage IV	T2	63	Female	1:DECEASED	27.1	NA	
+M0	N0 (i+)	Stage IIA	T2	51	Female	0:LIVING	20.73	20.73	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	79	Female	0:LIVING	22.17	22.17	0:DiseaseFree
+M0	N0	Stage IIIB	T4b	55	Female	0:LIVING	12.25	12.25	0:DiseaseFree
+M0	N0	Stage IIA	T2	61	Female	0:LIVING	24.8	24.8	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	68	Female	1:DECEASED	140.18	NA	
+M0	N1a	Stage IIB	T2	58	Female	0:LIVING	9.03	9.03	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	49	Female	0:LIVING	16.39	16.39	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	64	Female	0:LIVING	27.5	27.5	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	50	Female	0:LIVING	23.72	23.72	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	43	Female	0:LIVING	7.06	7.06	0:DiseaseFree
+M0	N0	Stage IA	T1c	44	Female	1:DECEASED	55.45	NA	
+M0	N0	Stage II	T2	62	Female	0:LIVING	24.97	24.97	0:DiseaseFree
+M0	N1	Stage IIA	T1c	58	Female	0:LIVING	28.25	28.25	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	58	Female	0:LIVING	101.54	101.54	0:DiseaseFree
+M0	N1a	Stage IIB	T2	46	Female	0:LIVING	36.76	36.76	0:DiseaseFree
+M0	N1	Stage II	T1	49	Female	0:LIVING	63.57	63.57	0:DiseaseFree
+M0	N0	Stage IIB	T3	49	Female	0:LIVING	104.2	104.2	0:DiseaseFree
+M0	N0	Stage I	T1	50	Female	0:LIVING	93.23	93.23	0:DiseaseFree
+M0	N0	Stage IIA	T2	52	Female	0:LIVING	37.98	37.98	0:DiseaseFree
+M0	N0	Stage IIA	T2	49	Female	0:LIVING	99.24	99.24	0:DiseaseFree
+M1	N1a	Stage IV	T2	58	Male	1:DECEASED	11.43	NA	
+MX	N0 (i-)	Stage IA	T1c	77	Female	0:LIVING	29.01	29.01	0:DiseaseFree
+MX	N1b	Stage X	T2	58	Female	1:DECEASED	18.33	14.68	1:Recurred/Progressed
+MX	N0	Stage IIA	T2	74	Female	0:LIVING	16.52	16.52	0:DiseaseFree
+M0	N0	Stage IIA	T2	51	Male	0:LIVING	32.88	32.88	0:DiseaseFree
+M0	N1a	Stage IIB	T2	58	Female	0:LIVING	9.03	9.03	0:DiseaseFree
+M0	N0	Stage I	T1	66	Female	0:LIVING	38.27	38.27	0:DiseaseFree
+M0	N0	Stage IIA	T2	38	Female	0:LIVING	41	41	0:DiseaseFree
+M1	NX	Stage IV	T1c	55	Female	1:DECEASED	7.46	6.31	1:Recurred/Progressed
+MX	N0	Stage IIA	T2	65	Female	0:LIVING	16.56	16.56	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	38.57	31.9	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	51	Female	0:LIVING	23.23	23.23	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	43	Female	0:LIVING	82.62	82.62	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	64	Female	0:LIVING	79.7	79.7	0:DiseaseFree
+M0	N0	Stage IA	T1c	37	Female	0:LIVING	37.71	37.71	0:DiseaseFree
+M0	N0	Stage IIA	T2	44	Female	0:LIVING	38.73	38.73	0:DiseaseFree
+M0	N3a		T4b	76	Female	0:LIVING	39.98	39.98	0:DiseaseFree
+M1	N1b	Stage IV	T2	47	Female	1:DECEASED	33.97	NA	
+M0	N0	Stage IIB	T3	30	Female	0:LIVING	0.26	0.26	0:DiseaseFree
+M0	N3	Stage IIIC	T4b	56	Female	0:LIVING	40.21	40.21	0:DiseaseFree
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	13.27	13.27	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	39	Female	0:LIVING	13.67	13.67	0:DiseaseFree
+M0	N0	Stage IIA	T2	57	Female	0:LIVING	98.59	98.59	0:DiseaseFree
+M0	N1	Stage IIA	T1	64	Female	0:LIVING	64.78	64.78	0:DiseaseFree
+M0	N1	Stage IIB	T2	45	Female	0:LIVING	36.79	36.79	0:DiseaseFree
+M0	N1a	Stage IIB	T2	59	Female	0:LIVING	21.88	21.88	0:DiseaseFree
+M0	N0	Stage IIA	T2	46	Female	0:LIVING	32.72	32.72	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	48	Female	0:LIVING	50.39	40.7	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	44	Female	0:LIVING	55.58	55.58	0:DiseaseFree
+MX	N1a	Stage IIB	T2	79	Female	0:LIVING	60.87	60.87	0:DiseaseFree
+M0	N1a	Stage IIIB	T4	71	Female	0:LIVING	161.93	161.93	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	57	Female	0:LIVING	83.28	83.28	0:DiseaseFree
+M0	N1mi	Stage IIA	T1c	71	Female	0:LIVING	59.13	59.13	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	62	Female	0:LIVING	25.72	25.72	0:DiseaseFree
+M0	N1a	Stage IIB	T2	29	Female	0:LIVING	107.95	107.95	0:DiseaseFree
+M0	N0	Stage IIA	T2	74	Female	0:LIVING	0	0	0:DiseaseFree
+M1	N3a	Stage IV	T2	45	Female	0:LIVING	30.98	25.03	1:Recurred/Progressed
+MX	N3a	Stage IIIC	T3	50	Female	0:LIVING	11.96	11.96	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	44	Female	1:DECEASED	18.82	14.98	1:Recurred/Progressed
+M0	N2	Stage IIIA	T3	43	Female	0:LIVING	118.5	84.13	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	58	Female	0:LIVING	88.93	88.93	0:DiseaseFree
+MX	N0 (i-)	Stage IA	T1c	61	Female	0:LIVING	14.49	14.49	0:DiseaseFree
+M0	N1a	Stage IIIB	T4b	85	Female	1:DECEASED	12.39	NA	
+M0	N1	Stage IIA	T1	47	Female	0:LIVING	86.01	86.01	0:DiseaseFree
+MX	N0	Stage IIA	T2	72	Female	0:LIVING	13.7	13.7	0:DiseaseFree
+M0	N0	Stage IA	T1c	63	Female	0:LIVING	16.46	16.46	0:DiseaseFree
+M0	N1	Stage IIB	T2	47	Female	0:LIVING	50	50	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2	61	Female	0:LIVING	19.58	19.58	0:DiseaseFree
+M0	N2	Stage IIIA	T2	54	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	74	Female	1:DECEASED	128.98	NA	
+M0	N1a	Stage IIB	T2	35	Female	1:DECEASED	113.73	NA	
+M0	N0 (i-)	Stage IIA	T2	33	Female	0:LIVING	30.16	30.16	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	53	Female	0:LIVING	76.71	76.71	0:DiseaseFree
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	51.35	51.35	0:DiseaseFree
+M0	N1a	Stage IIB	T2	35	Female	1:DECEASED	113.73	NA	
+M0	N0	Stage IIIB	T4b	60	Female	1:DECEASED	33.97	33.97	1:Recurred/Progressed
+MX	N1	Stage IIA	T1c	63	Female	0:LIVING	40.05	40.05	0:DiseaseFree
+MX	N1a	Stage IIB	T2	53	Female	0:LIVING	34.53	34.53	0:DiseaseFree
+M0	N0	Stage I	T1b	62	Female	0:LIVING	70.83	70.83	0:DiseaseFree
+M0	N1a	Stage IIB	T2	53	Female	0:LIVING	81.77	81.77	0:DiseaseFree
+M0	N0	Stage IIB	T3	83	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	40	Female	0:LIVING	70.17	70.17	0:DiseaseFree
+M1	N3b	Stage IV	T4d	63	Female	1:DECEASED	3.81	NA	
+MX	N3b	Stage IIIC	T2	68	Female	0:LIVING	39.75	33.31	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	69	Female	0:LIVING	42.97	42.97	0:DiseaseFree
+MX	N0	Stage IIB	T3	60	Female	0:LIVING	34	34	0:DiseaseFree
+MX	N1mi	Stage IB	T1c	88	Female	0:LIVING	14.52	14.52	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	52.96	52.96	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	38	Female	1:DECEASED	65.47	27.4	1:Recurred/Progressed
+MX	N0 (i-)	Stage IIB	T3	74	Female	0:LIVING	14.95	14.95	0:DiseaseFree
+M0	N0	Stage IIIB	T4b	48	Female	1:DECEASED	14.65	7.79	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	63	Female	0:LIVING	7.03	7.03	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	84	Female	0:LIVING	22.24	21.48	1:Recurred/Progressed
+M0	N1	Stage IIA	T1	58	Female	0:LIVING	12.35	12.35	0:DiseaseFree
+M0	N0	Stage IIA	T2	46	Female	0:LIVING	9.63	9.63	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	48.06	48.06	0:DiseaseFree
+M1	N2	Stage IV	T2	59	Female	0:LIVING	7.95	7.95	0:DiseaseFree
+M1	N1		T2	48	Female	1:DECEASED	244.91	16.1	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	9.86	9.86	0:DiseaseFree
+M0	N0	Stage IIB	T3	54	Female	0:LIVING	107.85	107.85	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	42	Female	0:LIVING	61.53	61.53	0:DiseaseFree
+M0	N1	Stage IIA	T1c	34	Female	0:LIVING	15.21	15.21	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N1	Stage IIB	T2	53	Female	0:LIVING	34.23	34.23	0:DiseaseFree
+M0	N0	Stage I	T1c	57	Female	0:LIVING	28.42	28.42	0:DiseaseFree
+M0	N1a	Stage IIIB	T4b	58	Female	0:LIVING	11.99	11.99	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	31	Female	0:LIVING	52.92	52.92	0:DiseaseFree
+M0	N0	Stage IA	T1c	64	Female	0:LIVING	27.56	27.56	0:DiseaseFree
+M0	N1a	Stage IIB	T2	57	Female	0:LIVING	50.79	50.79	0:DiseaseFree
+M0	N1a	Stage IIB	T2	69	Female	0:LIVING	8.28	8.28	0:DiseaseFree
+MX	N3a	Stage IIIC	T3	70	Female	0:LIVING	14.68	14.55	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	50	Female	0:LIVING	17.18	17.18	0:DiseaseFree
+M0	N1mi	Stage IIIA	T3	50	Female	0:LIVING	25.03	25.03	0:DiseaseFree
+M0	N1	Stage IIB	T2	65	Female	0:LIVING	11.99	11.99	0:DiseaseFree
+M0	N1a	Stage IIB	T2	56	Female	0:LIVING	2.37	2.37	0:DiseaseFree
+M0	N1mi	Stage IB	T1c	47	Female	0:LIVING	30.58	30.58	0:DiseaseFree
+M0	N1a	Stage IIB	T2	50	Female	0:LIVING	131.57	131.57	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	62	Female	0:LIVING	99.11	99.11	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	39	Female	0:LIVING	17.44	17.44	0:DiseaseFree
+MX	N1a	Stage IIB	T2	34	Female	0:LIVING	19.91	19.91	0:DiseaseFree
+M0	N0 (mol+)	Stage IA	T1c	60	Female	0:LIVING	11.07	11.07	0:DiseaseFree
+MX	N1a	Stage IIB	T2	66	Female	0:LIVING	20.37	20.37	0:DiseaseFree
+MX	N0	Stage IA	T1c	62	Female	0:LIVING	32.72	32.72	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	75	Female	0:LIVING	33.05	33.05	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	62	Female	1:DECEASED	13.99	NA	
+M0	N0 (i-)	Stage IA	T1	48	Female	0:LIVING	78.35	78.35	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	38	Female	1:DECEASED	100.62	67.05	1:Recurred/Progressed
+M0	N0	Stage I	T1c	46	Female	0:LIVING	50.33	50.33	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	1:DECEASED	11.04	NA	
+M0	N1a	Stage IIB	T2	32	Female	0:LIVING	33.18	33.18	0:DiseaseFree
+M0	NX	Stage I	T1b	82	Female	0:LIVING	24.54	24.54	0:DiseaseFree
+MX	N1	Stage IIB	T2	45	Female	0:LIVING	18.2	18.2	0:DiseaseFree
+MX	N0	Stage IA	T1b	57	Female	0:LIVING	22.31	22.31	0:DiseaseFree
+M0	N0	Stage IIA	T2	55	Female	0:LIVING	12.65	12.65	0:DiseaseFree
+M0	N1	Stage IIB	T2	34	Female	0:LIVING	12.45	4.47	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	54	Female	0:LIVING	37.78	37.78	0:DiseaseFree
+M0	N3	Stage IIIC	T3a	50	Female	0:LIVING	36.79	36.79	0:DiseaseFree
+MX	N2a	Stage IIIA	T2	77	Female	0:LIVING	2.63	2.63	0:DiseaseFree
+M0	N1mi	Stage IIIA	T3	50	Female	1:DECEASED	26.64	NA	
+M0	N0	Stage IIA	T2	53	Female	0:LIVING	43	43	0:DiseaseFree
+MX	N0	Stage IIA	T2	57	Female	0:LIVING	21.12	21.12	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	53	Female	0:LIVING	70.8	70.8	0:DiseaseFree
+M0	N1b	Stage IIB	T2	48	Female	1:DECEASED	57.79	NA	
+M0	N0	Stage IA	T1c	71	Female	0:LIVING	38.34	38.34	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	55	Female	0:LIVING	68.07	68.07	0:DiseaseFree
+M0	N1	Stage IIB	T2	42	Female	0:LIVING	32.03	32.03	0:DiseaseFree
+MX	N1mi	Stage IB	T1c	NA	Female	0:LIVING	26.56	NA	0:DiseaseFree
+M0	N2	Stage IIIA	T2	74	Female	0:LIVING	46.62	46.62	0:DiseaseFree
+M0	N0	Stage I	T1	54	Female	0:LIVING	99.7	99.7	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	79	Female	0:LIVING	13.21	13.21	0:DiseaseFree
+M0	N1	Stage IIB	T2	80	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N1a	Stage IIB	T2	44	Male	0:LIVING	36.93	36.93	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	75.16	75.16	0:DiseaseFree
+M0	N0	Stage I	T1	69	Female	0:LIVING	166.29	138.07	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	37	Female	0:LIVING	37.42	37.42	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	51	Female	0:LIVING	71.09	71.09	0:DiseaseFree
+M0	N2	Stage IIIA	T1c	70	Female	0:LIVING	34.79	34.79	0:DiseaseFree
+M0	N1a	Stage IIB	T2	72	Female	0:LIVING	38.17	38.17	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	47	Female	0:LIVING	18.2	18.2	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	44	Female	0:LIVING	51.64	51.64	0:DiseaseFree
+MX	N2a	Stage IIIA	T3	80	Female	0:LIVING	17.77	17.77	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	64	Female	0:LIVING	28.42	28.42	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	41	Female	0:LIVING	52.14	52.14	0:DiseaseFree
+MX	N1	Stage IIB	T2	50	Female	0:LIVING	22.93	22.93	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	80	Female	0:LIVING	31.8	31.8	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	69	Female	0:LIVING	13.99	13.99	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	75	Female	0:LIVING	53.84	53.84	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	59	Female	0:LIVING	15.77	15.77	0:DiseaseFree
+M0	N0	Stage I	T1	55	Female	1:DECEASED	82.79	NA	
+M0	N1a	Stage IIA	T1c	62	Female	1:DECEASED	89.09	NA	
+M0	N2	Stage IIIA	T2	69	Female	0:LIVING	0.3	0.3	0:DiseaseFree
+M0	N0	Stage IIA	T2	46	Female	0:LIVING	32.33	32.33	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	53	Female	0:LIVING	21.65	21.65	0:DiseaseFree
+M0	N2	Stage IIIA	T2	44	Female	1:DECEASED	45.6	NA	
+M0	N1	Stage IIA	T1	56	Female	0:LIVING	0.03	0.03	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	49	Female	0:LIVING	14.29	14.29	0:DiseaseFree
+M0	N1	Stage IIB	T2	42	Female	0:LIVING	3.22	3.22	0:DiseaseFree
+M0	N0	Stage IIA	T2	73	Female	1:DECEASED	77.56	36.79	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	55	Female	0:LIVING	50.92	50.92	0:DiseaseFree
+M0	N0	Stage IIIB	T4	41	Female	0:LIVING	7.46	7.46	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	70	Female	0:LIVING	11.76	11.76	0:DiseaseFree
+M0	N1	Stage IIB	T2	85	Female	0:LIVING	19.19	19.19	0:DiseaseFree
+MX	N1a	Stage IIB	T2	64	Female	0:LIVING	17.05	17.05	0:DiseaseFree
+MX	N3a	Stage IIIC	T3	80	Female	0:LIVING	20.37	20.37	0:DiseaseFree
+M0	N1	Stage IIB	T2	26	Female	1:DECEASED	94.15	46.45	1:Recurred/Progressed
+M0	N1mi	Stage IB	T1c	41	Female	0:LIVING	20.86	20.86	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	56	Female	0:LIVING	10.51	10.51	0:DiseaseFree
+M0	N0	Stage IIB	T3	48	Female	0:LIVING	14.42	14.42	0:DiseaseFree
+M0	N1a	Stage IIB	T2	43	Female	0:LIVING	16.26	16.26	0:DiseaseFree
+M0	N1b	Stage IIB	T2	60	Female	1:DECEASED	120.53	NA	
+M0	N2a	Stage IIIA	T2	58	Female	0:LIVING	35.02	35.02	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	52	Female	0:LIVING	12.88	12.88	0:DiseaseFree
+MX	N3a	Stage IIIC	T3	69	Female	0:LIVING	17.48	17.48	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	38	Female	0:LIVING	4.4	4.4	0:DiseaseFree
+M0	N0	Stage I	T1c	78	Female	0:LIVING	54.01	54.01	0:DiseaseFree
+M0	N1b	Stage IIB	T2	50	Female	1:DECEASED	146.39	NA	
+M0	N0	Stage I	T1c	52	Female	0:LIVING	59.79	59.79	0:DiseaseFree
+M0	N1a	Stage IIB	T2	42	Female	0:LIVING	84.07	84.07	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	41	Female	0:LIVING	32.75	32.75	0:DiseaseFree
+MX	N1	Stage IIB	T2	62	Female	0:LIVING	19.22	19.22	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	45	Female	1:DECEASED	11.99	NA	
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	73.29	31.8	1:Recurred/Progressed
+M0	N2	Stage IIIA	T3	47	Female	0:LIVING	20.24	20.24	0:DiseaseFree
+M0	N0	Stage IIA	T2	49	Female	0:LIVING	20.6	20.6	0:DiseaseFree
+M0	N0 (i+)	Stage I	T1b	67	Female	0:LIVING	50.43	50.43	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	21.16	21.16	0:DiseaseFree
+MX	N0	Stage IIA	T2	63	Female	0:LIVING	29.83	29.83	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	40	Female	1:DECEASED	113.7	66.06	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	52	Female	0:LIVING	73.59	73.59	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	7.59	7.59	0:DiseaseFree
+MX	N3a	Stage IIIC	T1b	59	Female	0:LIVING	54.96	54.96	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	54	Female	0:LIVING	33.34	33.34	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	39	Female	0:LIVING	47.21	47.21	0:DiseaseFree
+MX	N0	Stage IIB	T3	40	Female	0:LIVING	31.96	31.96	0:DiseaseFree
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	61.63	61.63	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	82	Female	0:LIVING	23.03	23.03	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	34	Female	0:LIVING	105.26	98.19	1:Recurred/Progressed
+M0	N1a	Stage IIIA	T3	75	Female	0:LIVING	53.02	53.02	0:DiseaseFree
+M0	N1a	Stage IIB	T2	42	Female	0:LIVING	17.02	17.02	0:DiseaseFree
+MX	N1mi		T1c	50	Female	0:LIVING	13.24	13.24	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	51	Female	1:DECEASED	212.09	71.12	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	29	Female	0:LIVING	0.23	0.23	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	56	Female	0:LIVING	33.08	33.08	0:DiseaseFree
+M0	N2	Stage IIIA	T2	67	Female	0:LIVING	0.36	0.36	0:DiseaseFree
+M0	N0	Stage IIA	T2	64	Female	0:LIVING	48.19	48.19	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	1:DECEASED	25.82	NA	
+MX	N1a	Stage IIIA	T3	76	Female	0:LIVING	21.81	21.81	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2	66	Female	0:LIVING	24.77	24.77	0:DiseaseFree
+M0	N1a	Stage IIB	T2	63	Female	0:LIVING	13.53	13.53	0:DiseaseFree
+M0	N0	Stage IIA	T2	49	Female	1:DECEASED	47.27	NA	
+M0	N1	Stage IIB	T2	51	Female	0:LIVING	125.07	37.32	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	53	Female	0:LIVING	12.02	12.02	0:DiseaseFree
+M0	N1	Stage IIB	T2	77	Female	0:LIVING	34.53	34.53	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	64	Female	0:LIVING	21.02	21.02	0:DiseaseFree
+M0	N0	Stage IIA	T2	72	Female	0:LIVING	13.04	13.04	0:DiseaseFree
+MX	N0	Stage IA	T1c	51	Female	0:LIVING	28.84	28.84	0:DiseaseFree
+M0	N0	Stage IA	T1c	56	Female	0:LIVING	12.98	12.98	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	59	Female	0:LIVING	24.57	24.57	0:DiseaseFree
+M0	N0	Stage I	T1c	56	Female	0:LIVING	81.37	81.37	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	72	Female	1:DECEASED	46.98	NA	
+M0	N0 (i-)	Stage IA	T1	73	Female	0:LIVING	101.64	101.64	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	59	Female	0:LIVING	5.58	5.58	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	20.07	20.07	0:DiseaseFree
+M0	N0	Stage I	T1c	63	Female	0:LIVING	73.46	73.46	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	72	Female	0:LIVING	113.53	113.53	0:DiseaseFree
+M0	N0	Stage IA	T1c	51	Female	0:LIVING	14.68	14.68	0:DiseaseFree
+M0	N2	Stage IIIA	T1c	62	Female	0:LIVING	21.25	21.25	0:DiseaseFree
+M0	N0	Stage IIA	T2	68	Female	0:LIVING	10.41	10.41	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	72	Female	1:DECEASED	51.35	NA	
+M0	N2	Stage IIIA	T2	53	Female	0:LIVING	108.94	108.94	0:DiseaseFree
+M0	N0	Stage IIB	T3	67	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	80	Female	0:LIVING	8.97	8.97	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	52	Female	0:LIVING	20.11	10.02	1:Recurred/Progressed
+MX	N0 (i-)	Stage IIA	T2	48	Female	0:LIVING	129.99	129.99	0:DiseaseFree
+MX	N2a	Stage IIIA	T2	53	Female	0:LIVING	18.2	18.2	0:DiseaseFree
+M0	N2	Stage IIIA	T2	36	Female	0:LIVING	5.58	5.58	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	61	Female	0:LIVING	37.45	37.45	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	56	Female	1:DECEASED	43.5	NA	
+M0	N0 (i-)	Stage IIA	T2	46	Female	0:LIVING	24.93	24.93	0:DiseaseFree
+M0	N1	Stage IIB	T2	49	Female	0:LIVING	11.83	11.83	0:DiseaseFree
+cM0 (i+)	N1a	Stage IIIA	T3	47	Female	0:LIVING	63.04	63.04	0:DiseaseFree
+M0	N0 (i+)	Stage IIB	T3	46	Female	0:LIVING	24.7	24.7	0:DiseaseFree
+MX	N2a	Stage IIIA	T3	73	Female	0:LIVING	43	42.81	1:Recurred/Progressed
+M0	N3	Stage IIIC	T2	60	Female	0:LIVING	26.68	26.68	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	69	Female	1:DECEASED	81.57	NA	
+M0	N0	Stage IA	T1c	63	Female	0:LIVING	23.49	23.49	0:DiseaseFree
+M0	N0	Stage IIA	T2	40	Female	0:LIVING	16.03	16.03	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	65	Female	0:LIVING	18.96	18.96	0:DiseaseFree
+M0	N1	Stage IIB	T2	29	Female	0:LIVING	16.85	16.85	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	71	Female	0:LIVING	2.56	2.56	0:DiseaseFree
+M0	N0	Stage I	T1c	60	Female	0:LIVING	50.76	50.76	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	44	Female	0:LIVING	107.62	107.62	0:DiseaseFree
+cM0 (i+)	N1a	Stage IIB	T2	51	Female	0:LIVING	18.63	18.63	0:DiseaseFree
+M0	N0	Stage IIB	T3	79	Female	0:LIVING	9.95	9.95	0:DiseaseFree
+M0	N0	Stage I	T1c	80	Female	0:LIVING	33.71	33.71	0:DiseaseFree
+M0	N0	Stage IIA	T2	88	Female	0:LIVING	16.16	16.16	0:DiseaseFree
+M0	N0	Stage IIA	T2	59	Female	0:LIVING	14.36	14.36	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	71	Female	0:LIVING	75.2	75.2	0:DiseaseFree
+M0	N0	Stage I	T1c	39	Female	0:LIVING	74.08	56.14	1:Recurred/Progressed
+MX	N0	Stage IIA	T2	79	Female	0:LIVING	23.59	19.25	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	60	Female	1:DECEASED	81.11	NA	
+M0	N3	Stage IIIC	T2	36	Female	0:LIVING	21.52	4.7	1:Recurred/Progressed
+M0	N1	Stage IIA	T1c	68	Female	0:LIVING	29.96	29.96	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	67	Female	0:LIVING	16.95	16.95	0:DiseaseFree
+MX	N0 (i-)	Stage IIB	T3	66	Female	0:LIVING	6.14	6.14	0:DiseaseFree
+M0	N3	Stage IIIC	T3	34	Female	0:LIVING	12.32	12.32	0:DiseaseFree
+M0	N1	Stage IIIA	T3	60	Female	0:LIVING	97.6	97.6	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	76	Female	0:LIVING	44.65	44.65	0:DiseaseFree
+M0	N0	Stage IIA	T2	48	Female	0:LIVING	63.57	63.57	0:DiseaseFree
+MX	N2a	Stage IIIA	T2	84	Female	0:LIVING	15.6	15.6	0:DiseaseFree
+M0	N1	Stage IIB	T2	51	Female	0:LIVING	1.77	1.77	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	170.04	138.76	1:Recurred/Progressed
+MX	NX	Stage X	TX	55	Female	0:LIVING	132.95	59.4	1:Recurred/Progressed
+M0	N2a	Stage IIIA	T1c	63	Female	0:LIVING	13.01	13.01	0:DiseaseFree
+M0	N1mi	Stage IIA	T1c	44	Female	0:LIVING	54.14	54.14	0:DiseaseFree
+M1	N2	Stage IV	T4b	56	Female	1:DECEASED	20.11	NA	
+MX	N1a	Stage IIA	T1c	51	Female	0:LIVING	8.21	8.21	0:DiseaseFree
+MX	N1a	Stage IIB	T2	72	Female	0:LIVING	1.12	1.12	0:DiseaseFree
+MX	N0	Stage IIA	T2	58	Female	0:LIVING	22.8	22.8	0:DiseaseFree
+M0	N3b	Stage IIIC	T2	58	Female	1:DECEASED	7.85	6.8	1:Recurred/Progressed
+M0	N3a	Stage IIIC	T2	49	Female	0:LIVING	7.29	7.29	0:DiseaseFree
+M0	N0	Stage I	T1c	64	Female	1:DECEASED	18.5	6.18	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	15.01	15.01	0:DiseaseFree
+M0	N1	Stage IIB	T2	67	Female	0:LIVING	27.99	27.99	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	59	Female	0:LIVING	55.29	55.29	0:DiseaseFree
+M0	N0 (i+)	Stage IIB	T3	46	Female	0:LIVING	20.43	20.43	0:DiseaseFree
+M0	N0	Stage I	T1c	74	Female	0:LIVING	37.39	37.39	0:DiseaseFree
+MX	N0	Stage IIA	T2	71	Female	1:DECEASED	36.27	NA	
+M0	N1mi	Stage IIB	T2	65	Female	0:LIVING	18.1	18.1	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	34	Female	0:LIVING	55.39	55.39	0:DiseaseFree
+M0	N0 (i+)	Stage I	T1c	58	Female	0:LIVING	72.04	72.04	0:DiseaseFree
+M0	N1a	Stage IIB	T2	41	Female	0:LIVING	98.92	98.92	0:DiseaseFree
+MX	N0	Stage I	T1c	80	Female	0:LIVING	65.57	65.57	0:DiseaseFree
+M0	N0	Stage IA	T1c	55	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N1	Stage IIB	T2	28	Female	0:LIVING	35.74	35.74	0:DiseaseFree
+M0	N0	Stage IIA	T2	84	Female	0:LIVING	45.04	45.04	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	62	Female	0:LIVING	41.72	41.72	0:DiseaseFree
+M0	N0	Stage I	T1b	54	Female	0:LIVING	72.17	72.17	0:DiseaseFree
+M0	N0	Stage IA	T1c	63	Female	0:LIVING	3.02	3.02	0:DiseaseFree
+M0	N0	Stage IA	T1c	73	Female	0:LIVING	10.61	10.61	0:DiseaseFree
+M0	N0	Stage I	T1	83	Female	0:LIVING	100.92	100.92	0:DiseaseFree
+M0	N1a	Stage IIB	T2	77	Female	0:LIVING	14.16	14.16	0:DiseaseFree
+MX	N1	Stage IIB	T2	62	Female	1:DECEASED	20.17	18.27	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	74	Female	0:LIVING	12.32	12.32	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	60	Female	0:LIVING	136.63	44.81	1:Recurred/Progressed
+M0	N0	Stage I	T1	49	Female	0:LIVING	57.23	57.23	0:DiseaseFree
+M0	N1a	Stage IIB	T2	69	Female	0:LIVING	17.97	17.97	0:DiseaseFree
+M0	NX		T4b	60	Female	0:LIVING	16.49	14.16	1:Recurred/Progressed
+M0	N2	Stage IIIA	T2	68	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0	Stage IIA	T2	73	Female	0:LIVING	13.01	13.01	0:DiseaseFree
+M0	N0	Stage IA	T1b	63	Female	0:LIVING	21.42	21.42	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	63	Female	0:LIVING	110.41	110.41	0:DiseaseFree
+MX	N0		T1c	68	Female	0:LIVING	19.02	19.02	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	59	Female	0:LIVING	74.08	74.08	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2	71	Female	0:LIVING	2.3	2.3	0:DiseaseFree
+M0	N0	Stage IA	T1c	61	Female	0:LIVING	7.16	7.16	0:DiseaseFree
+M0	N2	Stage IIIA	T2	55	Female	0:LIVING	31.93	31.93	0:DiseaseFree
+M0	N0	Stage IIA	T2	50	Female	0:LIVING	25.03	25.03	0:DiseaseFree
+M0	N1	Stage IIIB	T4	84	Male	0:LIVING	61.83	61.83	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	48	Male	0:LIVING	16.29	16.29	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2	73	Female	0:LIVING	13.57	13.57	0:DiseaseFree
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	61.99	61.99	0:DiseaseFree
+M0	N0	Stage IIA	T2	72	Female	0:LIVING	20.07	20.07	0:DiseaseFree
+M0	N1b	Stage IIB	T2	49	Female	0:LIVING	281.08	281.08	0:DiseaseFree
+M0	N1	Stage IIA	T1	47	Female	0:LIVING	102.76	102.76	0:DiseaseFree
+M0	N0	Stage IIA	T2	45	Female	1:DECEASED	93.76	53.88	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	63	Female	0:LIVING	37.98	37.98	0:DiseaseFree
+M0	N0	Stage I	T1c	46	Female	0:LIVING	106.96	106.96	0:DiseaseFree
+M1	N1a	Stage IV	T2	64	Female	1:DECEASED	111.99	84	1:Recurred/Progressed
+M0	N0	Stage I	T1c	45	Female	0:LIVING	41.95	41.95	0:DiseaseFree
+MX	N0	Stage IA	T1c	43	Female	0:LIVING	28.19	28.19	0:DiseaseFree
+M0	N0	Stage IIB	T3	74	Female	0:LIVING	13.96	13.96	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	46	Female	0:LIVING	14.68	14.68	0:DiseaseFree
+M0	N1	Stage IIB	T2	68	Female	1:DECEASED	5.26	NA	
+M0	N1	Stage IIB	T2	59	Female	0:LIVING	134.03	134.03	0:DiseaseFree
+M0	N1mi	Stage IB	T1c	37	Female	0:LIVING	49.8	49.8	0:DiseaseFree
+M0	N2	Stage IIIA	T1c	43	Female	0:LIVING	47.6	47.6	0:DiseaseFree
+M0	N0 (i+)	Stage IA	T1c	52	Female	0:LIVING	47.57	47.57	0:DiseaseFree
+M0	N0	Stage IIA	T2	47	Female	0:LIVING	17.28	17.28	0:DiseaseFree
+M0	N0	Stage I	T1c	79	Female	1:DECEASED	66	NA	
+M0	N0	Stage I	T1c	68	Female	1:DECEASED	33.15	NA	
+M0	N0 (i-)	Stage IA	T1c	62	Female	0:LIVING	51.28	51.28	0:DiseaseFree
+cM0 (i+)	N0 (i+)	Stage I	T1	47	Female	0:LIVING	17.38	17.38	0:DiseaseFree
+MX	N2a	Stage IIIA	T3	46	Female	0:LIVING	32.42	32.42	0:DiseaseFree
+MX	N3a	Stage IIIC	T2	90	Female	0:LIVING	17.67	17.67	0:DiseaseFree
+M0	N0	Stage IIA	T2	43	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N1	Stage IIB	T2	64	Female	0:LIVING	12.91	12.91	0:DiseaseFree
+M0	NX	Stage I	T1c	89	Female	0:LIVING	50.76	39.75	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	53	Female	0:LIVING	11.99	11.99	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	40	Female	0:LIVING	282.69	101.05	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	47	Female	1:DECEASED	NA	NA	
+M0	N2	Stage IIIA	T2	39	Female	0:LIVING	94.22	94.22	0:DiseaseFree
+M0	N1b	Stage IIB	T2	67	Female	1:DECEASED	49.54	NA	
+M0	N0 (i+)	Stage IIB	T3	63	Female	0:LIVING	25.26	25.26	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	61	Female	0:LIVING	17.48	17.48	0:DiseaseFree
+MX	N0	Stage IIB	T3	62	Female	0:LIVING	14.65	14.65	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1b	85	Female	0:LIVING	23.88	23.88	0:DiseaseFree
+MX	N1a	Stage IIIA	T3	79	Female	1:DECEASED	12.65	0.69	1:Recurred/Progressed
+M0	N0 (i+)	Stage IIA	T2	45	Female	0:LIVING	26.91	26.91	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	79	Female	0:LIVING	42.97	42.97	0:DiseaseFree
+M0	N1	Stage IIA	T2b	50	Female	1:DECEASED	37.52	NA	
+M0	N1a	Stage IIB	T2	64	Female	0:LIVING	18.46	18.46	0:DiseaseFree
+M0	N2	Stage IIIA	T1	78	Female	1:DECEASED	12.65	NA	
+M0	N1	Stage IIB	T2	56	Female	0:LIVING	12.58	12.58	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	60	Female	0:LIVING	263.07	263.07	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	61	Female	0:LIVING	106.7	106.7	0:DiseaseFree
+M0	N1c	Stage IIIA	T3	55	Female	0:LIVING	85.81	85.81	0:DiseaseFree
+M0	N2	Stage IIIA	T3	34	Female	0:LIVING	80.22	80.22	0:DiseaseFree
+M0	N1	Stage IIB	T2	57	Female	0:LIVING	102.53	102.53	0:DiseaseFree
+M0	N0	Stage IA	T1c	81	Female	0:LIVING	4.89	4.89	0:DiseaseFree
+M0	N0	Stage IIA	T2	46	Female	0:LIVING	95.93	95.93	0:DiseaseFree
+M0	N1a	Stage IIB	T2	59	Female	0:LIVING	18.89	18.89	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	67	Female	0:LIVING	31.7	31.7	0:DiseaseFree
+M0	N1	Stage IIIB	T4	63	Female	1:DECEASED	18.76	16.06	1:Recurred/Progressed
+M0	N0	Stage IIB	T3	67	Female	0:LIVING	8.9	9.03	1:Recurred/Progressed
+MX	N1	Stage IIIA	T3	90	Female	0:LIVING	19.78	19.78	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	50	Female	0:LIVING	38.21	38.21	0:DiseaseFree
+M0	N0	Stage I	T1c	56	Female	0:LIVING	69.91	31.73	1:Recurred/Progressed
+M0	N0	Stage IIIB	T4b	66	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N2	Stage IIIA	T2	45	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0 (i+)	Stage I	T1	56	Female	0:LIVING	118.36	118.36	0:DiseaseFree
+M0	N1a	Stage IIB	T2	67	Female	0:LIVING	107.85	107.85	0:DiseaseFree
+M0	N1	Stage IIIA	T3	68	Female	1:DECEASED	10.58	9.89	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	49	Female	0:LIVING	69.25	69.25	0:DiseaseFree
+M0	N1	Stage IIB	T2	68	Female	0:LIVING	101.45	101.45	0:DiseaseFree
+M0	NX	Stage I	T1c	88	Female	1:DECEASED	122.73	NA	
+M0	N1	Stage IIIA	T3	62	Female	0:LIVING	44.25	44.25	0:DiseaseFree
+MX	N1	Stage IIB	T2	40	Female	0:LIVING	90.64	90.64	0:DiseaseFree
+M0	N1mi	Stage IIA	T1c	38	Female	0:LIVING	12.91	12.91	0:DiseaseFree
+M0	N3	Stage IIIC	T2	61	Female	0:LIVING	52.99	35.02	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	64	Female	0:LIVING	78.22	78.22	0:DiseaseFree
+M0	N0	Stage IIA	T2	77	Female	0:LIVING	23.19	23.19	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	37	Female	0:LIVING	99.05	99.05	0:DiseaseFree
+M0	N1a	Stage IIIB	T4b	73	Female	1:DECEASED	53.94	NA	
+M0	N0	Stage IIA	T2	55	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0	Stage IIA	T2	41	Female	0:LIVING	86.89	86.89	0:DiseaseFree
+M0	N2	Stage IIIA	T2	50	Female	0:LIVING	53.58	53.58	0:DiseaseFree
+MX	N3a	Stage IIIC	T3	39	Female	0:LIVING	25.89	25.89	0:DiseaseFree
+M0	N0	Stage IA	T1c	56	Female	0:LIVING	13.99	13.99	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	70	Female	0:LIVING	30.98	30.98	0:DiseaseFree
+M0	N0	Stage IIA	T2	61	Female	0:LIVING	32.98	7.98	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	45	Female	0:LIVING	15.21	15.21	0:DiseaseFree
+M0	N3	Stage IIIC	T2	70	Female	0:LIVING	2.56	2.56	0:DiseaseFree
+M0	N0	Stage IIA	T2	50	Female	0:LIVING	11.33	11.33	0:DiseaseFree
+M0	N0	Stage IA	T1c	68	Female	0:LIVING	21.65	21.65	0:DiseaseFree
+M0	N0	Stage IIA	T2	90	Female	0:LIVING	12.94	12.94	0:DiseaseFree
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	10.28	10.28	0:DiseaseFree
+M0	N1	Stage IIB	T2	61	Female	0:LIVING	39.52	39.52	0:DiseaseFree
+MX	N1	Stage IIB	T2	47	Female	0:LIVING	18.66	18.66	0:DiseaseFree
+M0	N1	Stage IIB	T2	61	Female	0:LIVING	77.6	59.46	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	47	Female	0:LIVING	40.7	40.7	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+MX	N1a	Stage IIA	T1b	48	Female	0:LIVING	39.68	39.68	0:DiseaseFree
+M0	N1		T1c	40	Female	0:LIVING	20.57	20.57	0:DiseaseFree
+M0	N0	Stage IA	T1c	77	Female	0:LIVING	12.19	12.19	0:DiseaseFree
+M0	N0	Stage I	T1	65	Female	0:LIVING	33.71	33.71	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	50	Female	0:LIVING	101.91	101.91	0:DiseaseFree
+M0	N0	Stage IIA	T2	63	Female	0:LIVING	26.38	26.38	0:DiseaseFree
+				NA			NA	NA	
+M0	N1a	Stage IIIA	T3	59	Female	0:LIVING	71.94	71.94	0:DiseaseFree
+M0	N1	Stage IIB	T2	34	Female	0:LIVING	14.06	14.06	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	19.02	19.02	0:DiseaseFree
+M0	N1	Stage IIB	T2	44	Female	0:LIVING	22.37	22.37	0:DiseaseFree
+M0	N1	Stage IIB	T2	48	Female	0:LIVING	30.42	30.42	0:DiseaseFree
+M0	N0	Stage IIA	T2	69	Female	0:LIVING	16.39	16.39	0:DiseaseFree
+MX	N0	Stage IIA	T2	71	Female	0:LIVING	14.22	14.22	0:DiseaseFree
+M0	N1	Stage IIB	T2	31	Female	1:DECEASED	74.67	NA	
+M0	N0	Stage IA	T1c	59	Female	0:LIVING	13.47	13.47	0:DiseaseFree
+M0	N1	Stage IIB	T2	71	Female	0:LIVING	18.46	18.46	0:DiseaseFree
+M0	N1	Stage IIB	T2	71	Female	0:LIVING	20.3	20.3	0:DiseaseFree
+M0	N0	Stage I	T1c	70	Female	0:LIVING	8.51	8.51	0:DiseaseFree
+M0	N0	Stage IIA	T2	61	Female	0:LIVING	17.94	17.94	0:DiseaseFree
+M0	N1a	Stage IIB	T2	62	Female	0:LIVING	63.24	63.24	0:DiseaseFree
+M0	N1a	Stage IIB	T2	52	Female	0:LIVING	0.99	0.99	0:DiseaseFree
+MX	N1	Stage IIIA	T3	40	Female	0:LIVING	86.47	86.47	0:DiseaseFree
+MX	N0	Stage IIA	T2	49	Female	0:LIVING	19.71	19.71	0:DiseaseFree
+M0	N2a	Stage IIIA	T1	62	Female	1:DECEASED	33.9	22.4	1:Recurred/Progressed
+M0	N0	Stage II	T2	60	Female	0:LIVING	26.12	26.12	0:DiseaseFree
+M0	N3	Stage IIIC	T3	79	Female	1:DECEASED	6.47	NA	
+M0	N0	Stage IIA	T2	59	Female	0:LIVING	12.32	12.32	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	58	Female	0:LIVING	86.89	86.89	0:DiseaseFree
+M0	N0	Stage IIA	T2	43	Female	0:LIVING	140.44	140.44	0:DiseaseFree
+M0	N1	Stage IIB	T2	36	Female	0:LIVING	133.11	133.11	0:DiseaseFree
+M1	N3	Stage IV	T3	64	Female	1:DECEASED	129.47	89.26	1:Recurred/Progressed
+M0	N3	Stage IIIC	T3	55	Female	0:LIVING	17.12	17.12	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	65	Female	0:LIVING	13.6	13.6	0:DiseaseFree
+MX	N0 (i-)	Stage IA	T1c	72	Female	0:LIVING	20.17	20.17	0:DiseaseFree
+M0	N0	Stage I	T1c	64	Female	0:LIVING	21.62	21.62	0:DiseaseFree
+M0	N1	Stage IIB	T2	61	Female	0:LIVING	188.53	126.87	1:Recurred/Progressed
+M0	N1b	Stage IIB	T2	61	Female	1:DECEASED	68.89	44.12	1:Recurred/Progressed
+MX	N1a	Stage IIIA	T3	82	Female	0:LIVING	18.86	18.86	0:DiseaseFree
+MX	N0	Stage IIA	T2	73	Female	0:LIVING	17.02	17.02	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	78	Female	0:LIVING	34.26	34.26	0:DiseaseFree
+M0	N0	Stage IIA	T2	41	Female	0:LIVING	19.94	19.94	0:DiseaseFree
+M0	N1	Stage IIA	T2	67	Female	0:LIVING	30.32	30.32	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	47	Female	0:LIVING	102.23	102.23	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	59	Female	0:LIVING	38.96	38.96	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	47	Female	0:LIVING	87.19	87.19	0:DiseaseFree
+M0	N0	Stage I	T1c	60	Female	0:LIVING	22.17	22.17	0:DiseaseFree
+MX	N1	Stage IIB	T2	65	Female	0:LIVING	74.08	74.08	0:DiseaseFree
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	86.47	86.47	0:DiseaseFree
+M0	N1a	Stage IIB	T2	63	Female	0:LIVING	76.51	76.51	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	77	Male	0:LIVING	7.95	7.95	0:DiseaseFree
+M0	N0	Stage IIA	T2	48	Female	0:LIVING	34.13	34.13	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	50	Female	0:LIVING	50.66	50.66	0:DiseaseFree
+M0	N0	Stage I	T1	60	Female	1:DECEASED	30.26	NA	
+M0	N0	Stage IA	T1b	32	Female	0:LIVING	5.65	5.65	0:DiseaseFree
+M0	N0	Stage IA	T1	55	Female	0:LIVING	24.24	24.24	0:DiseaseFree
+M0	N1a	Stage IIB	T2	40	Female	0:LIVING	14.91	14.91	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	54	Female	0:LIVING	34.4	34.4	0:DiseaseFree
+M0	N3	Stage IIIC	T3	78	Female	0:LIVING	32.88	32.88	0:DiseaseFree
+				NA			NA	NA	
+M0	N0 (i-)	Stage IIA	T2	43	Female	0:LIVING	29.8	29.8	0:DiseaseFree
+M0	N1a	Stage IIB	T2	55	Female	0:LIVING	36.2	36.2	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	48	Female	0:LIVING	11.04	11.04	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	47	Female	0:LIVING	85.28	85.28	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	39	Female	0:LIVING	108.64	8.77	1:Recurred/Progressed
+M0	N0	Stage IA	T1c	52	Female	0:LIVING	56.77	56.77	0:DiseaseFree
+M0	N0	Stage IIA	T2	79	Female	0:LIVING	13.4	6.31	1:Recurred/Progressed
+MX	N2a	Stage IIIA	T1c	81	Female	0:LIVING	15.31	15.31	0:DiseaseFree
+M0	N0	Stage IIA	T2	50	Female	0:LIVING	50.03	50.03	0:DiseaseFree
+MX	N0	Stage IIA	T2	75	Female	0:LIVING	17.51	17.51	0:DiseaseFree
+M0	N1	Stage IIB	T2	68	Female	0:LIVING	10.97	10.97	0:DiseaseFree
+M0	N0	Stage IIA	T2	80	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	79	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	72	Female	1:DECEASED	32.56	NA	
+M0	N1	Stage IIB	T2	40	Female	0:LIVING	71.75	71.75	0:DiseaseFree
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	2.56	2.56	0:DiseaseFree
+MX	N0	Stage IA	T1c	63	Female	0:LIVING	11.27	11.27	0:DiseaseFree
+M0	N2	Stage IIIA	T1	45	Female	0:LIVING	112.68	112.68	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	25.99	25.99	1:Recurred/Progressed
+M0	N2	Stage IIIA	T2	59	Female	0:LIVING	13.01	13.01	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	75	Female	1:DECEASED	127.23	NA	
+MX	N2a	Stage IIIA	T2	78	Female	0:LIVING	73	73	0:DiseaseFree
+M0	N0	Stage IIA	T2	61	Female	0:LIVING	5.35	5.35	0:DiseaseFree
+MX	N3a	Stage X	T4b	81	Female	0:LIVING	19.97	19.97	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	69	Female	0:LIVING	11.5	11.5	0:DiseaseFree
+M0	N1	Stage IIB	T2	82	Female	0:LIVING	8.97	8.97	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	69	Female	0:LIVING	9.63	9.63	0:DiseaseFree
+M0	N0	Stage I	T1c	51	Female	0:LIVING	53.88	53.88	0:DiseaseFree
+M0	N1a	Stage IIB	T2	42	Female	0:LIVING	56.24	56.24	0:DiseaseFree
+M0	N1	Stage IIB	T2	52	Female	1:DECEASED	22.27	22.08	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	61	Female	0:LIVING	5.26	5.26	0:DiseaseFree
+MX	N1a	Stage IIB	T2	87	Female	0:LIVING	16.29	16.29	0:DiseaseFree
+M0	N2	Stage IIIA	T3	62	Female	0:LIVING	21.12	21.12	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	53	Female	0:LIVING	74.97	74.97	0:DiseaseFree
+MX	N0 (i+)	Stage II	T2	59	Male	0:LIVING	16.75	16.75	0:DiseaseFree
+MX	N1a	Stage IIB	T2	41	Female	0:LIVING	99.28	99.28	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	12.09	12.09	0:DiseaseFree
+M0	N1a	Stage IIB	T2	66	Female	0:LIVING	23.88	23.88	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	54	Female	0:LIVING	85.28	85.28	0:DiseaseFree
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	38.14	38.14	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	36	Female	0:LIVING	17.15	17.15	0:DiseaseFree
+M0	N0	Stage I	T1	47	Female	0:LIVING	2.76	2.76	0:DiseaseFree
+M0	N2	Stage IIIA	T2	51	Female	0:LIVING	99.54	99.54	0:DiseaseFree
+M0	N2	Stage IIIA	T2	61	Female	0:LIVING	9.76	9.76	0:DiseaseFree
+M0	N1	Stage IIB	T2	58	Female	0:LIVING	12.52	12.52	0:DiseaseFree
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	28.94	28.94	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	40	Female	1:DECEASED	20.99	18.5	1:Recurred/Progressed
+M0	N0 (i-)	Stage I	T1c	69	Female	1:DECEASED	59.53	44.38	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	58	Female	0:LIVING	36.53	36.53	0:DiseaseFree
+M0	N2	Stage IIIA	T2	56	Female	0:LIVING	41.69	41.69	0:DiseaseFree
+M1	NX	Stage IV	T2	76	Female	0:LIVING	9.99	9.99	0:DiseaseFree
+M0	N1a	Stage IIIB	T4b	73	Female	0:LIVING	49.01	49.01	0:DiseaseFree
+M0	N1a	Stage IIB	T2	52	Female	0:LIVING	20.86	20.86	0:DiseaseFree
+MX	N1	Stage IIA	T1c	76	Female	0:LIVING	73.85	73.85	0:DiseaseFree
+M0	N2	Stage IIIA	T2	40	Female	0:LIVING	11.27	11.27	0:DiseaseFree
+M0	N0 (i+)	Stage IIB	T3	51	Female	0:LIVING	70.37	70.37	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	68	Female	0:LIVING	65.05	65.05	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	78	Female	0:LIVING	20.37	20.37	0:DiseaseFree
+M0	N0	Stage IIA	T2	40	Female	1:DECEASED	32.06	NA	
+M0	N2	Stage IIIB	T4b	29	Female	0:LIVING	9.92	9.92	0:DiseaseFree
+M0	N1a	Stage IIB	T2	56	Female	0:LIVING	55.26	55.26	0:DiseaseFree
+MX	N2a	Stage IIIA	T1c	65	Female	0:LIVING	15.51	15.51	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	12.52	12.52	0:DiseaseFree
+M1	N2	Stage IV	T2	82	Female	1:DECEASED	44.84	21.45	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	54	Female	1:DECEASED	55.81	17.87	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	42	Female	0:LIVING	48.52	48.52	0:DiseaseFree
+MX	N2a	Stage IIIA	T1c	46	Female	0:LIVING	15.34	15.34	0:DiseaseFree
+M0	N0	Stage I	T1c	47	Female	0:LIVING	81.57	81.57	0:DiseaseFree
+M0	N0	Stage IIA	T2	45	Female	0:LIVING	62.88	62.88	0:DiseaseFree
+MX	NX	Stage IIA	T2	52	Female	0:LIVING	9.95	9.95	0:DiseaseFree
+M0	N0 (i+)	Stage IIB	T3	74	Female	0:LIVING	23.46	23.46	0:DiseaseFree
+MX	N1a	Stage IIIA	T3	76	Female	0:LIVING	19.32	19.32	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	51	Female	0:LIVING	37.19	37.19	0:DiseaseFree
+M0	N1	Stage IIB	T2	72	Female	1:DECEASED	29.7	17.21	1:Recurred/Progressed
+M0	N1a	Stage IIIA	T3	58	Female	0:LIVING	32.03	32.03	0:DiseaseFree
+M0	N1a	Stage IIB	T2	67	Female	0:LIVING	37.48	6.41	1:Recurred/Progressed
+M0	N0	Stage IA	T1c	55	Female	0:LIVING	6.9	6.9	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	55	Female	1:DECEASED	19.19	NA	
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	19.25	19.25	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	61	Female	0:LIVING	19.32	19.32	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	68	Female	0:LIVING	30.98	30.98	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	52	Female	0:LIVING	19.94	19.94	0:DiseaseFree
+M0	N0	Stage I	T1c	35	Female	0:LIVING	74.84	74.84	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	57	Female	0:LIVING	35.28	35.28	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	45	Female	0:LIVING	7.13	7.13	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	50	Female	0:LIVING	11.43	11.43	0:DiseaseFree
+M0	N1a	Stage IIB	T2	80	Female	1:DECEASED	29.01	NA	
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	53.94	53.94	0:DiseaseFree
+M0	N1	Stage IIB	T2	63	Female	0:LIVING	54.96	54.96	0:DiseaseFree
+M0	N0	Stage I	T1c	46	Female	0:LIVING	63.34	63.34	0:DiseaseFree
+MX	N1a	Stage IIB	T2	43	Female	0:LIVING	1.68	1.68	0:DiseaseFree
+M0	N1	Stage IIB	T2	62	Female	0:LIVING	12.65	12.65	0:DiseaseFree
+M1	NX	Stage IV	T3	62	Female	1:DECEASED	11.89	NA	
+M0	N1a	Stage IIB	T2	63	Female	0:LIVING	20.66	20.66	0:DiseaseFree
+M0	N2	Stage IIIA	T2	65	Male	0:LIVING	39.13	39.13	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	71	Female	1:DECEASED	28.88	11.86	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	64	Female	0:LIVING	46.55	46.55	0:DiseaseFree
+M0	N0	Stage IIA	T2	57	Female	0:LIVING	33.97	33.97	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	61	Female	0:LIVING	60.68	60.68	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	79	Female	0:LIVING	12.02	12.02	0:DiseaseFree
+MX	N3	Stage IIIC	T3	45	Female	0:LIVING	27.83	27.83	0:DiseaseFree
+M0	N0 (i+)	Stage I	T1c	62	Female	0:LIVING	49.44	49.44	0:DiseaseFree
+M0	N1a	Stage IIB	T2	41	Female	0:LIVING	21.68	21.68	0:DiseaseFree
+M0	N0	Stage IIA	T2	53	Female	0:LIVING	37.22	37.22	0:DiseaseFree
+MX	N1a	Stage IIB	T2	39	Female	0:LIVING	17.35	17.35	0:DiseaseFree
+M0	N2	Stage IIIA	T2	63	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	66	Female	0:LIVING	165.64	165.64	0:DiseaseFree
+M0	N2	Stage IIIA	T3	49	Female	0:LIVING	13.4	13.4	0:DiseaseFree
+M0	N1	Stage IIB	T2	45	Female	0:LIVING	12.55	12.55	0:DiseaseFree
+M0	N0	Stage I	T1c	71	Female	0:LIVING	11.33	11.33	0:DiseaseFree
+M0	N0	Stage IA	T1c	68	Female	0:LIVING	12.94	12.94	0:DiseaseFree
+M0	N0	Stage I	T1c	83	Female	0:LIVING	38.01	38.01	0:DiseaseFree
+MX	N3	Stage IIIC	T2	43	Female	0:LIVING	34.89	34.89	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	62	Female	0:LIVING	79.04	79.04	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	60	Female	0:LIVING	92.41	92.41	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	76	Female	0:LIVING	34.53	34.53	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	50	Female	0:LIVING	12.65	12.65	0:DiseaseFree
+M0	N2	Stage IIIA	T3	52	Female	0:LIVING	12.16	12.16	0:DiseaseFree
+M0	N2	Stage IIIA	T2	41	Female	0:LIVING	32.85	32.85	0:DiseaseFree
+M0	N1b	Stage IIB	T2	80	Female	1:DECEASED	83.25	NA	
+M0	N1	Stage IIB	T2	45	Female	1:DECEASED	62.42	54.96	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	47	Female	0:LIVING	48	48	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	35	Female	1:DECEASED	29.96	21.91	1:Recurred/Progressed
+M0	N1b		T2	73	Female	1:DECEASED	102.69	91.56	1:Recurred/Progressed
+MX	N0	Stage IIA	T2	40	Female	0:LIVING	16.72	16.72	0:DiseaseFree
+M0	N0	Stage IIB	T3	70	Female	0:LIVING	66.1	66.1	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	57	Female	0:LIVING	105.98	105.98	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	44	Female	0:LIVING	21.22	21.22	0:DiseaseFree
+M0	N0	Stage I	T1	80	Female	0:LIVING	93.82	93.82	0:DiseaseFree
+M0	N1a	Stage IIB	T2	62	Female	0:LIVING	18.13	18.13	0:DiseaseFree
+M0	N1b	Stage IIB	T2	67	Female	1:DECEASED	79.4	NA	
+MX	NX	Stage X	T1c	62	Female	1:DECEASED	58.51	36.27	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	80	Female	0:LIVING	27	27	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	75	Female	1:DECEASED	10.51	NA	
+M0	N0	Stage I	T1c	68	Female	0:LIVING	19.42	19.42	0:DiseaseFree
+M0	N0	Stage I	T1c	65	Female	0:LIVING	33.15	33.15	0:DiseaseFree
+MX	N1a	Stage II	T2	59	Female	0:LIVING	2.1	2.1	0:DiseaseFree
+M0	N1mi	Stage IB	T1c	63	Female	0:LIVING	74.34	74.34	0:DiseaseFree
+M0	N1a	Stage IIB	T2	42	Female	0:LIVING	77.92	77.92	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	59	Female	0:LIVING	15.67	15.67	0:DiseaseFree
+M0	N1	Stage IIB	T2	58	Female	0:LIVING	42.21	42.21	0:DiseaseFree
+M0	N0	Stage IA	T1c	48	Female	0:LIVING	34.89	34.89	0:DiseaseFree
+M0	N0 (i-)	Stage X	TX	61	Female	0:LIVING	255.49	255.49	0:DiseaseFree
+M0	N0	Stage IIA	T2	67	Female	0:LIVING	1.12	1.12	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	78	Female	0:LIVING	3.88	3.88	0:DiseaseFree
+M0	N1a	Stage IIA	T1	72	Female	0:LIVING	23.78	10.22	1:Recurred/Progressed
+MX	N0	Stage IIB	T3	58	Female	0:LIVING	109.79	109.79	0:DiseaseFree
+M0	N0	Stage IA	T1c	57	Female	0:LIVING	17.67	17.67	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	52	Female	0:LIVING	7.1	7.1	0:DiseaseFree
+M1	N1a	Stage IV	T4	35	Female	0:LIVING	0.16	0.16	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	54	Female	1:DECEASED	31.77	NA	
+M0	N1b	Stage IIA	T2	88	Female	1:DECEASED	37.71	NA	
+M0	N2a	Stage IIIB	T4b	56	Female	1:DECEASED	23.75	NA	
+M0	N0 (i-)	Stage I	T1c	31	Female	1:DECEASED	58.9	53.02	1:Recurred/Progressed
+M0	N1	Stage IIIA	T3	50	Female	0:LIVING	98.85	24.28	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	56	Female	0:LIVING	2.6	2.6	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1b	76	Female	0:LIVING	103.55	103.55	0:DiseaseFree
+M0	N1	Stage IIIA	T3	38	Female	0:LIVING	10.41	10.41	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	46	Female	0:LIVING	43.69	43.69	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	49	Female	0:LIVING	44.78	44.78	0:DiseaseFree
+M0	N1b	Stage IIB	T2	67	Female	0:LIVING	21.39	21.39	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	56	Female	0:LIVING	20.43	20.43	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1b	64	Female	0:LIVING	51.54	51.54	0:DiseaseFree
+M0	N3	Stage IIIC	T2	60	Female	0:LIVING	32	32	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	79	Female	0:LIVING	34.26	34.26	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	69	Female	0:LIVING	40.54	40.54	0:DiseaseFree
+M0	N0	Stage I	T1	83	Female	1:DECEASED	42.25	NA	
+MX	N2a		T4d	51	Female	1:DECEASED	97.4	NA	
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	55.45	55.45	0:DiseaseFree
+M0	N2	Stage IIIA	T2	59	Female	0:LIVING	12.32	12.32	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	55	Female	0:LIVING	52.92	52.92	0:DiseaseFree
+M0	N1a	Stage IIB	T2	35	Female	0:LIVING	11.99	11.99	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	17.9	17.9	0:DiseaseFree
+M0	N1b	Stage IIB	T2	69	Female	1:DECEASED	54.96	NA	
+M0	N2	Stage IIIA	T2	63	Female	0:LIVING	23.82	23.82	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	58	Female	0:LIVING	14.42	14.42	0:DiseaseFree
+M0	N1mi	Stage IIA	T1c	40	Female	0:LIVING	19.65	19.65	0:DiseaseFree
+MX	N1	Stage IIB	T2	79	Female	0:LIVING	17.41	17.41	0:DiseaseFree
+MX	N0	Stage IIA	T2	84	Female	0:LIVING	25.03	25.03	0:DiseaseFree
+M0	N0	Stage IIA	T2	52	Female	0:LIVING	98.69	98.69	0:DiseaseFree
+M0	N1a	Stage IIB	T2	49	Female	0:LIVING	20.24	20.24	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	45	Female	0:LIVING	87.06	87.06	0:DiseaseFree
+M0	N1a	Stage IIB	T2	59	Female	0:LIVING	19.38	19.38	0:DiseaseFree
+M0	N0		T2	45	Female	0:LIVING	19.19	19.19	0:DiseaseFree
+M0	N0	Stage IA	T1c	61	Female	0:LIVING	16.56	16.56	0:DiseaseFree
+M0	N0	Stage IA	T1c	50	Female	0:LIVING	14.42	14.42	0:DiseaseFree
+M0	N0	Stage IIA	T2	47	Female	0:LIVING	108.28	19.32	1:Recurred/Progressed
+M0	N0 (i-)	Stage IA	T1	36	Female	0:LIVING	121.85	121.85	0:DiseaseFree
+M0	N1	Stage IIIA	T3	39	Female	0:LIVING	89.39	89.39	0:DiseaseFree
+MX	N1b	Stage IIB	T2	55	Female	0:LIVING	41.1	35.94	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	46	Female	0:LIVING	31.7	31.7	0:DiseaseFree
+M0	N1a	Stage IIB	T2	49	Female	1:DECEASED	35.91	35.22	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	45	Female	0:LIVING	20.11	20.11	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	1:DECEASED	41.79	NA	
+M0	N1b	Stage II	T2	50	Female	0:LIVING	206.7	168.1	1:Recurred/Progressed
+MX	N1	Stage IIA	T1c	52	Female	0:LIVING	24.7	24.7	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	76	Female	0:LIVING	16.79	16.79	0:DiseaseFree
+M0	N1	Stage IIIA	T3	39	Female	1:DECEASED	72.5	NA	
+MX	N0	Stage IIIB	T4b	63	Female	0:LIVING	7.39	7.39	0:DiseaseFree
+M0	N0	Stage IIA	T2	84	Female	0:LIVING	15.14	15.14	0:DiseaseFree
+M0	N0	Stage IIA	T2	78	Male	0:LIVING	32	32	0:DiseaseFree
+M0	N1mi	Stage IIA	T1c	43	Female	0:LIVING	14.78	14.78	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	56	Female	0:LIVING	40.37	40.37	0:DiseaseFree
+M0	N1	Stage IIA	T1c	56	Female	0:LIVING	50.2	50.2	0:DiseaseFree
+M0	N1a	Stage IIB	T2	61	Female	0:LIVING	14.26	14.26	0:DiseaseFree
+MX	N0	Stage X	T2	69	Female	0:LIVING	1.02	1.02	0:DiseaseFree
+M0	N0	Stage IIIB	T4	88	Female	0:LIVING	7	7	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1	62	Female	0:LIVING	88.53	88.53	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	45	Female	0:LIVING	33.74	33.74	0:DiseaseFree
+MX	N0	Stage IA	T1c	67	Female	0:LIVING	15.67	15.67	0:DiseaseFree
+MX	N0	Stage IIB	T3	75	Female	0:LIVING	14.98	14.98	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	40	Female	0:LIVING	140.77	140.77	0:DiseaseFree
+M0	N0	Stage IIA	T2	73	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N0	Stage IIA	T2	56	Female	0:LIVING	0.16	0.16	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	90	Female	0:LIVING	18.13	18.13	0:DiseaseFree
+MX	N3a	Stage IIIC	T1c	74	Female	0:LIVING	23.23	23.23	0:DiseaseFree
+M0	N1	Stage IIB	T2	81	Female	0:LIVING	5.85	5.85	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	70	Female	0:LIVING	52.43	52.43	0:DiseaseFree
+M0	N1b	Stage IIIB	T4b	44	Female	0:LIVING	234.1	36.14	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	62	Female	0:LIVING	48.42	48.42	0:DiseaseFree
+MX	N0 (i-)	Stage IIA	T2	56	Female	0:LIVING	29.2	29.2	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	54	Female	1:DECEASED	129.6	NA	
+M0	N0	Stage I	T1c	61	Female	0:LIVING	22.8	22.8	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	53	Female	0:LIVING	13.07	13.07	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	57	Female	0:LIVING	1.02	1.02	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	17.02	17.02	0:DiseaseFree
+M0	N1b	Stage IIB	T2	48	Female	1:DECEASED	51.12	NA	
+M0	N0	Stage IIIB	T4	54	Female	0:LIVING	-0.23	-0.23	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	68	Female	0:LIVING	14.82	14.82	0:DiseaseFree
+M0	N3c	Stage IIIC	T2	36	Female	1:DECEASED	18	10.28	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	38	Female	0:LIVING	18.89	18.89	0:DiseaseFree
+MX	N3a	Stage IIIC	T2	81	Female	0:LIVING	18.56	18.56	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	45	Female	0:LIVING	53.22	53.22	0:DiseaseFree
+M0	N0	Stage I	T1	46	Female	1:DECEASED	90.77	NA	
+M0	N0	Stage IIA	T2	44	Female	0:LIVING	28.48	28.48	0:DiseaseFree
+M0	N2	Stage IIIA	T1	50	Female	1:DECEASED	17.21	12.71	1:Recurred/Progressed
+M0	N2a	Stage IIIA	T1c	75	Female	0:LIVING	66.79	66.79	0:DiseaseFree
+M0	N1a	Stage IIB	T2	57	Female	0:LIVING	0.99	0.99	0:DiseaseFree
+MX	NX	Stage IIA	T2	90	Female	0:LIVING	22.24	22.24	0:DiseaseFree
+M0	N0	Stage I	T1c	71	Female	0:LIVING	77.89	77.89	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	49	Female	0:LIVING	26.22	26.22	0:DiseaseFree
+M0	N1	Stage IIB	T2	71	Female	0:LIVING	18.92	18.92	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	56	Female	0:LIVING	18.5	18.5	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	49	Female	0:LIVING	38.04	38.04	0:DiseaseFree
+M0	NX	Stage X	T2	40	Female	0:LIVING	9.99	9.99	0:DiseaseFree
+M0	N0	Stage I	T1c	74	Female	0:LIVING	43.3	43.3	0:DiseaseFree
+M0	N0	Stage I	T1c	61	Female	0:LIVING	23.85	23.85	0:DiseaseFree
+M0	N2	Stage IIIA	T2	45	Female	1:DECEASED	34.43	25.95	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	74	Female	0:LIVING	39.06	39.06	0:DiseaseFree
+M0	N1a	Stage IIB	T2	37	Female	0:LIVING	25.2	25.2	0:DiseaseFree
+M1	N3a	Stage IV	T4b	73	Female	1:DECEASED	77.14	NA	
+M0	N0 (i-)	Stage IIB	T3	26	Female	0:LIVING	68.4	68.4	0:DiseaseFree
+MX	N0 (i-)	Stage IA	T1c	61	Female	0:LIVING	24.93	24.93	0:DiseaseFree
+M0	N1	Stage IIB	T2	46	Female	0:LIVING	39.36	39.36	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	45	Female	0:LIVING	23.32	23.32	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	63	Female	0:LIVING	29.76	29.76	0:DiseaseFree
+M0	N2	Stage IIIA	T2	68	Female	0:LIVING	6.57	6.57	0:DiseaseFree
+M0	N0	Stage IIA	T2	58	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+MX	N1a	Stage IIB	T2	55	Female	0:LIVING	14.49	14.49	0:DiseaseFree
+M0	N0	Stage IIA	T2	35	Female	0:LIVING	23.29	23.29	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	41	Female	0:LIVING	10.09	10.09	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	45	Female	0:LIVING	23.32	23.32	0:DiseaseFree
+M0	N2a	Stage IIIA	T3	89	Female	1:DECEASED	9.99	NA	
+M0	N3	Stage IIIB	T2	70	Female	0:LIVING	0.99	0.99	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	60	Female	0:LIVING	15.64	15.64	0:DiseaseFree
+M0	N1	Stage IIB	T2	52	Female	0:LIVING	15.67	15.67	0:DiseaseFree
+M0	N0	Stage IIA	T2	65	Female	0:LIVING	20.57	20.57	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	47	Female	0:LIVING	28.84	28.84	0:DiseaseFree
+M0	N1a	Stage IIB	T2	41	Female	0:LIVING	18.13	18.13	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	63	Female	0:LIVING	22.44	22.44	0:DiseaseFree
+M0	N1b	Stage IIIA	T3	81	Female	1:DECEASED	112.29	NA	
+M0	N0	Stage IIA	T2	60	Female	0:LIVING	31.27	31.27	0:DiseaseFree
+M0	N0	Stage IIB	T3	63	Female	0:LIVING	29.24	29.24	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	36	Female	0:LIVING	60.51	60.51	0:DiseaseFree
+M0	N3a	Stage IIIC	T2	63	Female	0:LIVING	21.88	21.88	0:DiseaseFree
+M0	N1	Stage IIIB	T4	49	Female	0:LIVING	12.65	12.65	0:DiseaseFree
+M0	N2	Stage IIIA	T2	54	Female	0:LIVING	12.48	12.48	0:DiseaseFree
+M0	N0	Stage I	T1c	89	Female	0:LIVING	0.99	0.99	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	45	Female	0:LIVING	143.27	143.27	0:DiseaseFree
+M0	N2	Stage IIIA	T2	40	Female	0:LIVING	60.32	53.19	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	57	Female	0:LIVING	68.69	68.69	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	59	Female	0:LIVING	13.01	13.01	0:DiseaseFree
+M0	N2a	Stage IIIA	T2	66	Female	0:LIVING	24.97	24.97	0:DiseaseFree
+M0	N1	Stage IIB	T2	41	Female	0:LIVING	75.76	75.76	0:DiseaseFree
+M0	N0	Stage I	T1c	51	Female	0:LIVING	33.67	33.67	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	80	Female	0:LIVING	13.47	13.47	0:DiseaseFree
+M0	N2	Stage IIIA	T2	38	Female	0:LIVING	120.24	120.24	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	77.92	77.92	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	61	Male	0:LIVING	13.93	13.93	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	66	Female	0:LIVING	54.6	54.6	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	50	Female	0:LIVING	18.89	18.89	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	67	Female	0:LIVING	11.93	11.93	0:DiseaseFree
+M0	N1	Stage IIB	T2	48	Female	0:LIVING	24.54	24.54	0:DiseaseFree
+cM0 (i+)	N1mi	Stage IIB	T2	64	Female	0:LIVING	13.93	13.93	0:DiseaseFree
+MX	N0 (i-)	Stage IA	T1c	54	Female	0:LIVING	24.11	24.11	0:DiseaseFree
+M0	N1b	Stage IIB	T2	48	Female	1:DECEASED	51.12	NA	
+M0	N0	Stage I	T1	70	Female	0:LIVING	103.78	103.78	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	44	Female	0:LIVING	25.13	25.13	0:DiseaseFree
+M0	N1	Stage IIB	T2	37	Female	0:LIVING	47.11	47.11	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	69	Female	0:LIVING	40.97	40.97	0:DiseaseFree
+M0	N2	Stage IIIA	T3	42	Female	0:LIVING	169.38	169.38	0:DiseaseFree
+M0	N3	Stage IIIC	T2	68	Female	0:LIVING	33.28	33.28	0:DiseaseFree
+MX	N3a	Stage IIIC	T2	49	Female	0:LIVING	12.25	12.25	0:DiseaseFree
+M0	N1	Stage IIB	T2	68	Male	0:LIVING	61.24	61.24	0:DiseaseFree
+M0	N1a	Stage IIB	T2	48	Female	0:LIVING	18.2	18.2	0:DiseaseFree
+MX	N0	Stage IIA	T2	43	Female	0:LIVING	29.93	29.93	0:DiseaseFree
+MX	N3a	Stage IIIC	T2	49	Female	0:LIVING	12.25	12.25	0:DiseaseFree
+MX	N0	Stage IIB	T3	56	Female	0:LIVING	0.03	0.03	0:DiseaseFree
+M0	N0	Stage IIA	T2	35	Female	0:LIVING	69.28	69.28	0:DiseaseFree
+MX	N1	Stage IIA	T1c	50	Female	0:LIVING	39.29	39.29	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	61	Female	0:LIVING	16.62	16.62	0:DiseaseFree
+M0	N1	Stage IIA	T1	77	Female	0:LIVING	97.01	97.01	0:DiseaseFree
+M0	N0	Stage IIA	T2	76	Female	0:LIVING	7.36	7.36	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	45	Female	0:LIVING	70.3	70.3	0:DiseaseFree
+MX	N1a	Stage IIIA	T3	61	Female	0:LIVING	107.98	107.98	1:Recurred/Progressed
+MX	N3a	Stage IIIC	T3	29	Female	0:LIVING	21.06	21.06	0:DiseaseFree
+MX	N0	Stage IIA	T2	70	Female	0:LIVING	58.48	58.48	0:DiseaseFree
+MX	N1a	Stage IIB	T2	49	Female	0:LIVING	19.51	19.51	0:DiseaseFree
+M0	N0	Stage IIA	T2	75	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	53	Female	0:LIVING	36.1	36.1	0:DiseaseFree
+M0	N1	Stage IIA	T1c	71	Female	0:LIVING	32.98	32.98	0:DiseaseFree
+MX	N0	Stage IIA	T2	72	Female	1:DECEASED	41.89	NA	
+M0	N0	Stage IIA	T2	46	Female	0:LIVING	50.85	50.85	0:DiseaseFree
+M0	N0	Stage IIA	T2	63	Female	0:LIVING	11.14	11.14	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	40	Female	0:LIVING	20.7	20.7	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	40	Female	0:LIVING	20.7	20.7	0:DiseaseFree
+M0	N1b	Stage IIA	T1c	78	Female	1:DECEASED	114.06	NA	
+M0	N0	Stage IA	T1c	48	Female	0:LIVING	17.48	17.48	0:DiseaseFree
+M0	N3	Stage III	T3	55	Female	1:DECEASED	20.24	14.26	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	52	Female	0:LIVING	12.58	12.58	0:DiseaseFree
+M0	N3	Stage IIIC	T2	78	Female	1:DECEASED	26.97	19.61	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	57	Female	0:LIVING	30.58	30.58	0:DiseaseFree
+M0	N0	Stage IIA	T2	66	Female	0:LIVING	0	0	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	77	Female	0:LIVING	42.31	42.31	0:DiseaseFree
+M0	N1a	Stage IIB	T2	59	Female	0:LIVING	66.72	54.04	1:Recurred/Progressed
+M0	N3a	Stage IIIC	T4b	84	Female	1:DECEASED	8.74	5.09	1:Recurred/Progressed
+M0	N1b	Stage IIA	T2	38	Female	1:DECEASED	55.65	NA	
+M0	N2	Stage IIIB	T4b	90	Female	1:DECEASED	25.07	NA	
+M0	N0	Stage IIA	T2	75	Female	0:LIVING	13.44	13.44	0:DiseaseFree
+M0	N0	Stage IIA	T2	52	Female	0:LIVING	14.49	14.49	0:DiseaseFree
+M0	N0	Stage IA	T1c	61	Female	0:LIVING	19.55	19.55	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	41	Female	0:LIVING	78.94	78.94	0:DiseaseFree
+M0	N1a	Stage IIB	T2	70	Female	0:LIVING	12.35	12.35	0:DiseaseFree
+M0	N3a	Stage IIIC	T3	67	Female	0:LIVING	71.98	71.98	0:DiseaseFree
+M0	N1	Stage IIB	T2	52	Female	0:LIVING	105.22	105.22	0:DiseaseFree
+M0	N1a	Stage IIB	T2	66	Female	0:LIVING	37.71	37.71	0:DiseaseFree
+M0	N1mi	Stage IIIA	T3	56	Female	0:LIVING	13.73	13.73	0:DiseaseFree
+M0	N1a	Stage IIB	T2	63	Female	0:LIVING	29.96	29.96	0:DiseaseFree
+M0	N0 (i+)	Stage IIA	T2	70	Female	0:LIVING	134.3	134.3	0:DiseaseFree
+M0	N0 (i+)	Stage I	T1c	52	Female	0:LIVING	85.09	85.09	0:DiseaseFree
+M0	NX	Stage IIIB	T4b	88	Female	0:LIVING	15.31	8.48	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	90	Female	0:LIVING	20.11	20.11	0:DiseaseFree
+M0	N0	Stage IIB	T3	65	Female	0:LIVING	0.79	0.79	0:DiseaseFree
+M0	N0	Stage IIA	T2	54	Female	0:LIVING	107.13	107.13	0:DiseaseFree
+M0	N1	Stage IIB	T2	46	Female	0:LIVING	84.03	84.03	0:DiseaseFree
+M0	N0	Stage IIA	T2	52	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M1	N3	Stage IV	T3	66	Female	1:DECEASED	8.38	NA	
+M0	N0 (i-)	Stage IIA	T2	38	Female	0:LIVING	115.18	115.18	0:DiseaseFree
+M0	N0	Stage IIA	T2	63	Female	0:LIVING	46.55	46.55	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	62	Female	0:LIVING	35.64	35.64	0:DiseaseFree
+M0	N0	Stage IIA	T2	60	Female	1:DECEASED	35.22	2.96	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	31	Female	1:DECEASED	74.67	NA	
+M0	N1	Stage IIB	T2	48	Female	0:LIVING	8.74	8.74	0:DiseaseFree
+M0	N1a	Stage IIB	T2	58	Female	0:LIVING	18.04	18.04	0:DiseaseFree
+cM0 (i+)	N1a	Stage IIB	T2	51	Female	0:LIVING	17.25	17.25	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	54	Female	0:LIVING	0.69	0.69	0:DiseaseFree
+M1	N3	Stage IV	T4b	52	Female	1:DECEASED	37.02	NA	
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0	Stage IIA	T2	46	Female	0:LIVING	11.56	11.56	0:DiseaseFree
+M0	N0 (i-)	Stage IIB	T3	42	Female	0:LIVING	233.44	233.44	0:DiseaseFree
+M0	N0	Stage IIA	T2	63	Female	0:LIVING	16.69	16.69	0:DiseaseFree
+M0	N0	Stage IA	T1c	66	Female	0:LIVING	17.41	17.41	0:DiseaseFree
+M0	N1	Stage IIB	T2	46	Female	0:LIVING	12.65	12.65	0:DiseaseFree
+M0	N0	Stage IIA	T2	67	Female	0:LIVING	24.38	24.38	0:DiseaseFree
+M0	N0	Stage IIA	T2	79	Female	1:DECEASED	17.67	13.01	1:Recurred/Progressed
+M0	N1a	Stage IIB	T2	54	Female	0:LIVING	27.23	27.23	0:DiseaseFree
+M0	N1	Stage IIB	T2	54	Female	1:DECEASED	95.63	63.14	1:Recurred/Progressed
+M0	N1	Stage IIB	T2	39	Female	0:LIVING	42.41	42.38	1:Recurred/Progressed
+M0	N1a	Stage IIIA	T3	71	Female	0:LIVING	19.55	19.55	0:DiseaseFree
+M0	NX	Stage IIA	T2	78	Female	1:DECEASED	69.88	NA	
+M0	N3	Stage IIIC	T3	46	Female	0:LIVING	105.19	105.19	0:DiseaseFree
+M0	N0	Stage I	T1	62	Female	0:LIVING	70.99	70.99	0:DiseaseFree
+M0	N0 (i-)	Stage IA	T1c	55	Female	0:LIVING	26.48	26.48	0:DiseaseFree
+MX	N1mi	Stage IIB	T2	56	Female	0:LIVING	25.92	25.92	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	59	Female	0:LIVING	30.06	23.95	1:Recurred/Progressed
+M0	N0	Stage IIA	T2	74	Female	0:LIVING	0.33	0.33	0:DiseaseFree
+M0	N0	Stage IIA	T2	62	Female	0:LIVING	0.62	0.62	0:DiseaseFree
+M0	N0 (i-)	Stage I	T1c	56	Female	0:LIVING	43.4	43.4	0:DiseaseFree
+MX	N0	Stage IA	T1b	50	Female	0:LIVING	14.45	14.45	0:DiseaseFree
+M0	N0	Stage IIA	T2	64	Female	0:LIVING	64.16	64.16	0:DiseaseFree
+M0	N0	Stage IIA	T2	51	Female	0:LIVING	14.16	14.16	0:DiseaseFree
+M0	N0	Stage IIA	T2	30	Female	0:LIVING	67.05	67.05	0:DiseaseFree
+M0	N0 (i+)	Stage IA	T1c	87	Female	1:DECEASED	9.69	NA	
+M0	N0 (i-)	Stage IIA	T2	62	Female	0:LIVING	20.5	20.5	0:DiseaseFree
+M0	N1a	Stage IIB	T2	81	Female	0:LIVING	15.05	15.05	0:DiseaseFree
+M0	N0	Stage IIA	T2	73	Female	0:LIVING	7.98	7.98	0:DiseaseFree
+M0	N0	Stage IIA	T2	70	Female	1:DECEASED	7.36	NA	
+MX	N1a	Stage IIIA	T3	70	Female	0:LIVING	19.97	19.97	0:DiseaseFree
+M0	N1a	Stage IIB	T2	56	Female	0:LIVING	15.83	15.83	0:DiseaseFree
+MX	N2a	Stage IIIA	T2	61	Female	0:LIVING	14.13	14.13	0:DiseaseFree
+MX	N0	Stage I	T1c	38	Female	0:LIVING	8.48	8.48	0:DiseaseFree
+M0	N0	Stage IIA	T2	56	Female	0:LIVING	12.94	12.94	0:DiseaseFree
+M0	N1a	Stage IIIA	T3	53	Female	0:LIVING	9.43	9.43	0:DiseaseFree
+M1	N1a	Stage IV	T4	48	Female	1:DECEASED	26.02	NA	
+MX	N0	Stage IIA	T2	65	Female	0:LIVING	40.54	40.54	0:DiseaseFree
+M0	N0 (i-)	Stage IIA	T2	62	Female	0:LIVING	25.53	25.53	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	74	Female	1:DECEASED	32.98	NA	
+M0	N0 (i-)	Stage IA	T1c	66	Female	0:LIVING	143.04	143.04	0:DiseaseFree
+M0	N2	Stage IIIA	T3	63	Female	0:LIVING	1.02	1.02	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	65	Female	0:LIVING	23.06	23.06	0:DiseaseFree
+M0	N1	Stage IIB	T2	58	Female	0:LIVING	1.71	1.71	0:DiseaseFree
+M0	N3a	Stage IIIC	T1b	53	Female	1:DECEASED	61.89	44.45	1:Recurred/Progressed
+M0	N0 (i-)	Stage IIA	T2	40	Female	0:LIVING	19.19	19.19	0:DiseaseFree
+cM0 (i+)	N1a	Stage IIA	T1c	53	Female	0:LIVING	35.91	35.91	0:DiseaseFree
+M0	N0	Stage IIA	T2	34	Female	1:DECEASED	72.01	NA	
+MX	N0 (i-)	Stage IIA	T2	50	Female	0:LIVING	16.06	16.06	0:DiseaseFree
+MX	N0 (i-)	Stage IA	T1c	75	Female	0:LIVING	1.31	1.31	0:DiseaseFree
+M0	N0	Stage IIA	T2	56	Female	0:LIVING	0.53	0.53	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	51	Female	0:LIVING	63.27	63.27	0:DiseaseFree
+M0	N0	Stage I	T1c	77	Female	1:DECEASED	130.06	NA	
+M0	N0 (i+)	Stage IIA	T2	73	Female	1:DECEASED	5.19	NA	
+MX	N1mi	Stage IIA	T1c	36	Female	0:LIVING	23.46	23.46	0:DiseaseFree
+M0	N0	Stage IIB	T3	59	Female	0:LIVING	40.51	40.51	0:DiseaseFree
+M0	N1a	Stage IIA	T1c	58	Female	0:LIVING	23.92	23.92	0:DiseaseFree
+M0	N2a	Stage IIIA	T1c	44	Female	0:LIVING	66.33	66.33	0:DiseaseFree
+M0	N1mi	Stage IIB	T2	87	Female	1:DECEASED	26.02	25.62	1:Recurred/Progressed
+M0	N0	Stage I	T1c	76	Female	1:DECEASED	75.43	NA	
+M0	N2a	Stage IIIA	T3	61	Female	1:DECEASED	46.35	36.89	1:Recurred/Progressed
+M0	N0	Stage IA	T1c	66	Female	0:LIVING	6.11	6.11	0:DiseaseFree
+M0	N1	Stage IIB	T2	49	Female	0:LIVING	19.45	19.45	0:DiseaseFree
+M0	N0	Stage IA	T1c	64	Female	0:LIVING	1.61	1.61	0:DiseaseFree
+M0	N0	Stage IIA	T2	71	Female	0:LIVING	6.44	6.44	0:DiseaseFree
