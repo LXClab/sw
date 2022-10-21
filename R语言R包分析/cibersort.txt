@@ -1,0 +1,112 @@
+#R包的安装和下载
+install.packages('devtools')
+if(!require(CIBERSORT))devtools::install_github("Moonerss/CIBERSORT")
+library(usethis)
+library(devtools)
+library(CIBERSORT)
+library(dplyr)
+# 画热图的包
+install.packages("pheatmap")
+install.packages("ComplexHeatmap")
+  library(ggplot2)
+  library(pheatmap)
+  library(ComplexHeatmap)
+#同时准备好LM22的TXT文件，注意自己以后的文件要和这个TXT的格式一样
+#加载CIBERSORT包成功后，系统内部会自带data(LM22)
+data(LM22) 
+data(mixed_expr)#TCGA的演示数据，正式情况下就用自己的数据
+# 正式开始探索
+# 看5*5的数据
+LM22[1:5,1:5]
+mixed_expr[1:5,1:5]
+#数据处理
+a<-read.table("F:/kt/htseq/fpkm-uq/htseq_fpkm-uq-tumor  MSI-H.xls",head=T)
+b<- a[!duplicated(a$gene_symbol),]
+b<-data.frame(b)
+rownames(b)=b[,1]
+c<-a[duplicated(a$gene_symbol),]
+datamean=group_by(c,gene_symbol) %>% summarize_each(funs(mean))
+datamean<-data.frame(datamean)
+rownames(datamean)=datamean[,1]
+d<-b[row.names(datamean),]
+datamean<-rbind(datamean,d)
+datamean=group_by(datamean,gene_symbol) %>% summarize_each(funs(mean))
+datamean<-data.frame(datamean)
+rownames(datamean)=datamean[,1]
+b<-b[!rownames(b) %in% row.names(datamean) , ]
+MH<-rbind(b,datamean)
+MH<-data.frame(MH)
+rownames(MH)=MH[,1]
+MH<-select(MH,-1)
+#转换tpm
+expMatrix<-MH
+fpkm2tpm = function(fpkm){
+  exp(log(fpkm) - log(sum(fpkm)) + log(1e6))
+}
+tpm = apply(expMatrix, 2, fpkm2tpm)
+#数据处理
+tpm<-data.frame(tpm)
+#标准化
+library("preprocessCore")
+exprSet2<- as.matrix(tpm)
+exprSet2<- normalize.quantiles(exprSet2)
+exprSet2<-round(exprSet2, 4)
+row.names(exprSet2)<- row.names(tpm)
+colnames(exprSet2)<- colnames(tpm)
+exprSet2<- as.data.frame(exprSet2)
+setwd("F:/kt")
+write.table(exprSet2,file="F:/kt/H exprSet2.txt",sep="\t",quote=F,col.names=T)
+# 分别定义signature矩阵LM22和我的数据矩阵
+results <- cibersort(sig_matrix = LM22, mixture_file ="F:/kt/H exprSet2.txt")
+#理解一下results的结果
+#你可以理解为返回了一个列名为细胞类型、行名为样本名的细胞浸润程度（占比）的矩阵
+#此外result中还会多出三列：
+# P-value: 用来展示去卷积的结果在所有细胞类群中是否具有差异
+#Correlation:参考矩阵与输入矩阵的特征基因相关性
+#RMSE: Root mean squared error，参考矩阵与输入矩阵的特征基因标准差
+ 
+#heatmap
+#按行（样本内部）标准化可以看出在各类样本内部，M2浸润程度（占比）最高
+rowscale <- results[,1:ncol(LM22)]#只是相当于备份了一下results
+rowscale <- rowscale[,apply(rowscale, 2, function(x){sum(x)>0})]#删除全是0的列
+pheatmap(rowscale,
+         scale = 'row',#按行标准化，不标准化就会按绝对值显示，很诡异
+         cluster_col=T,#是否对列聚类，不聚类，坐标轴就按照原来的顺序显示
+         cluster_row=F,#是否对行聚类
+         angle_col = "315")#调整X轴坐标的倾斜角度
+ 
+#各类样本之间也具有自己占比高的特异性免疫细胞
+columnscale <- results[,1:ncol(LM22)]
+columnscale <- columnscale[,apply(columnscale, 2, function(x){sum(x)>0})]#删除全是0的列
+pheatmap(columnscale,
+         scale = 'column',
+         cluster_col=F,
+         cluster_row=T,
+         angle_col = "315")
+ 
+#堆积比例图
+my36colors <-c('#E5D2DD', '#53A85F', '#F1BB72', '#F3B1A0', '#D6E7A3', '#57C3F3', '#476D87','#E95C59', '#E59CC4', '#AB3282', '#23452F', '#BD956A', '#8C549C', '#585658','#9FA3A8', '#E0D4CA', '#5F3D69', '#C5DEBA', '#58A4C3', '#E4C755', '#F7F398','#AA9A59', '#E63863', '#E39A35', '#C1E6F3', '#6778AE', '#91D0BE', '#B53E2B', '#712820', '#DCC1DD', '#CCE0F5',  '#CCC9E6', '#625D9E', '#68A180', '#3A6963','#968175'
+)
+cellnum <- results[,1:ncol(LM22)]
+cell.prop<- apply(cellnum, 1, function(x){x/sum(x)})
+data4plot <- data.frame()
+for (i in 1:ncol(cell.prop)) {
+  data4plot <- rbind(
+    data4plot,
+    cbind(cell.prop[,i],rownames(cell.prop),
+          rep(colnames(cell.prop)[i],nrow(cell.prop)
+          )
+    )
+  )
+}
+ 
+colnames(data4plot)<-c('proportion','celltype','sample')
+data4plot$proportion <- as.numeric(data4plot$proportion)
+ggplot(data4plot,aes(sample,proportion,fill=celltype))+
+  geom_bar(stat="identity",position="fill")+
+  scale_fill_manual(values=my36colors)+#自定义fill的颜色
+  ggtitle("cell portation")+
+  theme_bw()+
+  theme(axis.ticks.length=unit(0.5,'cm'),axis.title.x=element_text(size=1))+
+  theme(axis.text.x = element_text(angle = 45, hjust = 0.5, vjust = 0.5))+#把x坐标轴横过来
+  guides(fill=guide_legend(title=NULL))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
