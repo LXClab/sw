@@ -1,0 +1,55 @@
+#R包的引入和下载
+install.packages("devtools")
+install.packages("tidyverse")
+install_github("lawrenson-lab/CaCTS")
+library(usethis)
+library(devtools)
+library(CaCTS)
+library(dplyr)
+#数据引入
+TCGA.RNA<- read.csv("F:/kt/htseq_fpkm-uq-tumor.csv",header=TRUE)
+# Annotations
+annot.table<-read.table("F:/kt/TCGAID.xls",head=T)
+colnames(annot.table)[3] <- "sample.id"
+colnames(annot.table)[2] <- "group.name"
+head(annot.table)
+annot.table$group.name <- paste0(annot.table$Cancer, "-", annot.table$group.name)
+head(data.frame(table(annot.table$group.name)), 3)
+#tf
+TF.list = read.delim("F:/kt/merged.list.1671.TFs.txt", sep = "\t")
+f.TCGA.RNA = TCGA.RNA[which(TCGA.RNA$gene_symbol %in% as.character(TF.list$NameTF)),]
+aux = which(!as.character(TF.list$NameTF) %in% f.TCGA.RNA$gene_symbol)
+write.table(TF.list[aux,],file = "non-expressed-TFs.txt", quote = F, row.names = F)
+#f.TCGA.RNA数据处理
+CA1<-f.TCGA.RNA[duplicated(f.TCGA.RNA$gene_symbol),]
+CA2<-f.TCGA.RNA[!duplicated(f.TCGA.RNA$gene_symbol),]
+rownames(CA1)=CA1[,1]
+rownames(CA2)=CA2[,1]
+k=c("SHOX","SMYD3","SP110","TBX22","ZBED1","ZFP41","ZNF286A","ZNF670", "ZNF709","ZNF747")
+CA3<-CA2[row.names(CA1),]
+CA4<-rbind(CA1,CA3)
+CA4<-select(CA4,-2)
+datamean=group_by(CA4,gene_symbol) %>% summarize_each(funs(mean))
+datamean<-data.frame(datamean)
+rownames(datamean)=k
+CA2<-select(CA2,-2)
+CA2<-CA2[!rownames(CA2) %in% k , ]
+f.TCGA.RNA<-rbind(datamean,CA2)
+f.TCGA.RNA<-data.frame(f.TCGA.RNA)
+rownames(f.TCGA.RNA) <- f.TCGA.RNA$gene_symbol
+f.TCGA.RNA <- f.TCGA.RNA[,2:ncol(f.TCGA.RNA)]
+dim(f.TCGA.RNA)
+delta1 = max(f.TCGA.RNA, na.rm = T) - min(f.TCGA.RNA, na.rm = T)
+delta2 = max(f.TCGA.RNA, na.rm = T) - 0
+f.TCGA.RNA.rs = (f.TCGA.RNA - min(f.TCGA.RNA, na.rm = T)) * delta1 / delta2
+f.TCGA.RNA.rs[1:5, 1:4]
+dim(f.TCGA.RNA.rs)
+#代表性样品
+matrix.rep <- prepare_representaive_samples(expr.matrix = f.TCGA.RNA.rs,sample.descr = annot.table, save.file = F)
+head(matrix.rep)
+cancer='STAD-MSI-H'
+#result
+res.CaCTS <- run_CaCTS_score(matrix.rep, cancer)
+tail(res.CaCTS)
+filtered <- filter_by_expression_rank(rep.matrix = matrix.rep, tf.scores = res.CaCTS, query.name = cancer, pn=0.05, pnE=0.05)
+filtered                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
