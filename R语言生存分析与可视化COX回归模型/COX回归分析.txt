@@ -1,0 +1,339 @@
+rm(list = ls()) #清空环境
+# 安装并加载要用的包
+#install.packages(c("survival","survminer","rms","gtsummary","flextable","Publish")) 
+library(survival)#survival包应用在生存分析，包中有许多数据集供我们学习使用（肺癌、膀胱癌，急性白血病、糖尿病等），功能多样，包括对生存数据的描述、假设检验、cox风险比例回归模型的构建及竞争风险模型的构建等
+library(survminer)#survminer包是实现生存分析曲线绘制最常用的包，包含函数ggsurvplot()，还可使用ggplot2. ggsurvplot() 轻松绘制美观并且格式工整的生存曲线。同时还能给出p值，风险值等参数。
+library(rms)#rms回归模型策略，这个包可以做列线图，而且只能依靠自己构建的模型来生成列线图
+library(gtsummary)#可以自定义输出形式，方便导出
+library(flextable)#表格的制作和美化
+library(Publish)#将描述性统计和回归分析的结果处理成手稿的最终表格和图表
+# 设置工作目录
+setwd("D:/R/kt/k")
+# 加载内置数据集colon，作为示例数据，两者选其一运行
+data(colon)
+str(colon)
+# 初步查看数据集
+head(colon)
+summary(colon) 
+# 定义因子变量
+colon$rx <- factor(colon$rx)
+colon$sex <- factor(colon$sex)
+colon$obstruct <- factor(colon$obstruct)
+colon$perfor <- factor(colon$perfor)
+colon$adhere <- factor(colon$adhere)
+colon$differ <- factor(colon$differ)
+colon$extent <- factor(colon$extent)
+colon$surg <- factor(colon$surg)
+colon$node4 <- factor(colon$node4)
+colon$etype <- factor(colon$etype)
+# 导出数据查看数据集结构
+write.csv(colon,"colon.csv",row.names = F)
+
+
+### 2.1 总结数据集的临床特征 Table 1
+# 挑选一些变量进行总结生成基线资料表
+colon1 <- colon %>% select(rx,sex,age,obstruct,perfor,adhere,nodes,differ,extent,surg,node4,etype,status) #选择一些变量
+table1 <- tbl_summary(colon1,
+                      missing = "ifany", # 对于连续变量及分类变量的缺失值进行统一设置，不单独列出缺失的数据，显示缺失值情况
+                      missing_text = "Missing") %>%#将缺失值标签修改为“missing”，默认为“Unknow”
+  #add_n() %>% # 添加具有非缺失观测值总数的列
+  modify_caption("**Table 1. Patient Characteristics**") %>%#增加表名称
+  modify_header(label = "**Variable**") %>% # 更新列标头
+  bold_labels()#表头格式调整
+# 总的特征比较
+table1 
+# 制作Table并导出
+table1 %>% as_flex_table() %>% flextable::save_as_docx(path = "./Table 1.1.docx")
+
+
+### 2.2 根据某个分组变量进行特征比较
+table2 <- tbl_summary(colon1,
+                      by = status, # 这里根据event进行分组比较
+                      missing = "ifany",  
+                      missing_text = "Missing") %>%
+  #add_n() %>% # 添加具有非缺失观测值总数的列
+  add_p(pvalue_fun = ~ style_pvalue(.x, digits = 3)) %>% # 测试组之间的差异
+  modify_caption("**Table 2. Patient Characteristics stratified by status**") %>%#增加表名称
+  modify_header(label = "**Variable**") %>% # 更新列标头
+  bold_labels()
+#根据是否发生event进行特征比较
+table2 
+#制作Table
+table2 %>% as_flex_table() %>% flextable::save_as_docx(path = "./Table 1.2.docx")
+
+
+### 3.0 连续性变量的分组
+# survminer自带函数surv_cutpoint()可以根据最佳截断值将连续性变量进行分类
+nodes.cut <- surv_cutpoint(colon, time= 'time', event = 'status', variables = 'nodes') 
+plot(nodes.cut, "nodes", palette = "nejm")
+pdf(file="./3.0. nodes.cut.pdf", width=7.5, height=5, onefile = FALSE)
+plot(nodes.cut, "nodes", palette = "nejm")
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0
+nodes.cut # 查看cutpoint值
+## cutpoint statistic
+## nodes        4  12.26273
+# 根据cutpoint值将连续型变量nodes转为2分类变量nodes_group1
+colon <- colon %>% mutate(nodes_group1 = ifelse(nodes >= nodes.cut$cutpoint[[1]], "High", "Low")) # 根据cutpoint值将nodes表达量分为High、Low两组
+colon$nodes_group1 <- factor(colon$nodes_group1)
+# 当然也可以根据中位值将连续型变量nodes转为2分类变量nodes_group2
+colon <- colon %>% mutate(nodes_group2 = ifelse(nodes >= median(colon$nodes), "High", "Low")) # 根据cutpoint值将nodes表达量分为High、Low两组
+colon$nodes_group2 <- factor(colon$nodes_group2)
+# 查看增加分组后的数据集情况
+summary(colon)
+
+
+### 4.1 Cox比例风险假设检验
+#Cox模型主要用到的是coxph()函数，但需要先用Surv()函数产生一个生存对象，另外coxph()函数支持的方法有：exact，breslow以及exact，默认是exact
+fit <- coxph(Surv(time, status) ~ age+sex+rx+adhere+extent+surg, data = colon)
+ftest <- cox.zph(fit)#cox.zph 检验 Cox 回归的比例风险假设
+ftest # 查看coxzph检验结果
+# 结果提示Cox比例风险假设全局检验通过，但sex变量不符合Cox比例风险假设
+ggcoxzph(ftest) # coxzph检验可视化
+pdf(file="./4.1. Cox比例风险假设检验.pdf", width=12, height=8, onefile = FALSE)
+ggcoxzph(ftest) # coxzph检验可视化
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0
+
+
+### 4.2 单因素Cox比例风险模型
+# 单个跑
+fit_age <- coxph(Surv(time, status) ~ age, data = colon)
+publish(fit_age)
+fit_sex <- coxph(Surv(time, status) ~ sex, data = colon)
+publish(fit_sex)
+# 一次性跑
+tab_UniCox <- colon %>%
+  select(age,sex,rx,adhere,extent,surg,time,status) %>%
+  tbl_uvregression(#tbl_uvregression进行单因素分析整洁表格的绘制
+    y = Surv(time,status),#确定结果变量
+    method = survival::coxph,#确定回归方法
+    exponentiate = TRUE,
+    hide_n = TRUE,
+    pvalue_fun = ~style_pvalue(., digits = 3))
+tab_UniCox
+tab_UniCox %>% as_flex_table() %>% flextable::save_as_docx(path = "./Table 2.1.UniCox Results.docx") #制作Table
+
+
+### 4.3 多因素Cox比例风险模型
+MultiCox <- coxph(Surv(time, status) ~ age+sex+rx+adhere+extent+surg, data = colon) 
+publish(MultiCox) #查看结果
+tab_MultiCox <- tbl_regression(MultiCox, exponentiate = TRUE)
+tab_MultiCox
+tab_MultiCox %>% as_flex_table() %>% flextable::save_as_docx(path = "./Table 2.2.MultiCox Results.docx") #一行代码制作Table
+
+
+### 4.4 多因素Cox模型结果可视化
+install.packages("forplo")
+library(forplo)
+MultiCox <- coxph(Surv(time, status) ~ age+sex+rx+adhere+extent+surg, data = colon) 
+publish(MultiCox) #查看结果
+# 绘制森林图
+pdf(file="./Forestplot of multivariable Cox model 1.pdf", width=10, height=6, onefile = FALSE)
+ggforest(MultiCox, data = colon)
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0。
+# 绘制森林图
+pdf(file="./Forestplot of multivariable Cox model 2.pdf", width=10, height=6, onefile = FALSE)
+forplo(MultiCox,
+       sort=F,#是否按照OR值大小排序
+       left.align=TRUE,#变量名左对齐
+       favorlabs=c('Lower risk','Higher risk'),#X轴下方标签
+       add.arrow.left=TRUE,#添加左箭头
+       add.arrow.right=TRUE,#添加右箭头
+       shade.every=1,#森林图主题设置每隔1个添加阴影
+       ci.edge=T,#置信区间两端bar
+       ci.lwd = 2,#置信区间线宽度
+       char=20,#估计值形状设置，与R base函数中pch一致
+       col = "darkorange",#估计值颜色
+       right.bar = T,#估计值右侧添加bar，通过设置right.bar.ticks可以添加分隔线
+       #row.labels=c('Risk score','Age','Heliotrope','Fever'),
+       title='Forestplot of multivariable Cox regression model',#标题
+       save = F,#保存图片，默认300dpi
+       save.path = "./",#设置路径
+       save.name = "Forestplot of multivariable Cox regression model",#文件存储名
+       save.type = "pdf",#图片类型
+       save.height = 6,#图片高度
+       save.width = 12)#图片宽度
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0。
+
+
+### 5.1 估计整个队列生存情况
+fit0 = survfit(Surv(time, status) ~ 1, data = colon)
+fit0
+# 寿命表法查看不同时间点的生存概率及95% CI
+summary(fit0)
+summary(fit0, times = c(365,730,1085,1825,2920)) # 特定时间点的生存概率及95% CI
+# 绘制粗略的KM曲线
+ggsurv0 <- ggsurvplot (fit0, palette = "nejm")
+ggsurv0
+
+# 绘制调整优化的KM曲线
+ggsurv0 <- ggsurvplot(
+  fit0,                      # survfit对象
+  pval = F, pval.size = 4, pval.coord = c(730, .25), # 显示p-value of log-rank test,可调整字体大小和位置.
+  conf.int = TRUE,             # 显示生存曲线置信区间
+  conf.int.alpha=c(0.1),       # 生存曲线置信区间透明度
+  surv.median.line = "none",   # 在中位生存时间点处绘制水平或垂直线的字符向量；可用值有"none"、"hv"、"h"、"v"；其中v绘制垂直线，h绘制水平线。
+  palette = "nejm",            # 设置生存曲线的颜色，这里用的nejm配色
+  xlim = c(0,3000),            # 自定义x轴（时间）显示范围
+  ylim = c(0, 1.02),           # 自定义y轴（生存概率）显示范围
+  axes.offset = TRUE,          # 坐标轴原点是否交叉
+  xlab = "Time in days",       # x轴标签
+  ylab = "Survival probability",   # y轴标签
+  break.time.by = 365,             # x轴（时间）间隔
+  surv.scale = "percent",          # 生存概率用百分比显示
+  censor.shape="|", censor.size = 2, # 删失线形状和大小
+  legend = "top",                    # 图例位置
+  legend.labs = c("All"),       # 图例标签
+  legend.title = "Strata",          # 图例标题
+  font.legend = c(16, "plain"),      # 图例字体设置
+  font.x = c(16, "plain", "black"),  # x轴标签字体设置
+  font.y = c(16, "plain", "black"),  # y轴标签字体设置
+  font.xtickslab = c(12, "plain", "black"),  # x轴刻度标签字体设置
+  font.ytickslab = c(12, "plain", "black"),  # y轴刻度标签字体设置
+  risk.table = T,                            # 显示risk.table
+  risk.table.title = "Number at risk",       # risk.table标题
+  risk.table.fontsize = 4,                   # risk.table字体大小
+  risk.table.col = "strata",                 # risk.table文字颜色
+  risk.table.y.text = TRUE,                  # risk.table y轴文字
+  tables.y.text = FALSE,
+  risk.table.height = 0.25,                  # risk.table占图片比例
+  surv.plot.height = 0.75,                   # 生存图占图片比例
+  title = "",                                # 自定义主标题
+  font.main = c(16, "bold"))
+
+
+BiocManager::install("markdown")
+library(markdown)
+ggsurv0$table <- ggsurv0$table + labs(x = NULL, y = NULL)
+ggsurv0
+pdf(file="./5.1. Survival_Curves_Overall.pdf", width=8, height=6, onefile = FALSE)
+ggsurv0
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0。
+
+
+### 5.2 两分组生存曲线比较
+fit_surg <- coxph(Surv(time, status) ~ surg, data = colon)
+publish(fit_surg)
+fit1 = survfit(Surv(time, status) ~ surg, data = colon)
+fit1
+# 寿命表法查看不同时间点的生存概率及95% CI
+summary(fit1)
+summary(fit1, times = c(365,730,1085,1825,2920)) # 特定时间点的生存概率及95% CI
+# 绘制粗略的KM曲线
+ggsurv1 <- ggsurvplot (fit1, palette = "nejm")
+ggsurv1
+# 绘制调整优化的KM曲线
+ggsurv1 <- ggsurvplot(
+  fit = fit1,
+  pval = F, pval.size = 4, pval.coord = c(730, .25), # 显示p-value of log-rank test,可调整字体大小和位置.
+  conf.int = TRUE,             # 显示生存曲线置信区间
+  conf.int.alpha=c(0.1),       # 生存曲线置信区间透明度
+  surv.median.line = "none",   # 在中位生存时间点处绘制水平或垂直线的字符向量；可用值有"none"、"hv"、"h"、"v"；其中v绘制垂直线，h绘制水平线。
+  palette = "nejm",            # 设置生存曲线的颜色，这里用的nejm配色
+  xlim = c(0,3000),            # 自定义x轴（时间）显示范围
+  ylim = c(0, 1.02),           # 自定义y轴（生存概率）显示范围
+  axes.offset = TRUE,          # 坐标轴原点是否交叉
+  xlab = "Time in days",       # x轴标签
+  ylab = "Survival probability",   # y轴标签
+  break.time.by = 365,             # x轴（时间）间隔
+  surv.scale = "percent",          # 生存概率用百分比显示
+  censor.shape="|", censor.size = 2, # 删失线形状和大小
+  legend = c(0.8, 0.8),              # 改变legend的位置为c(0.8, 0.85),也可以设为"top","right"
+  legend.labs = c("Yes","No"),       # 图例标签
+  legend.title = "Surgery",          # 图例标题
+  font.legend = c(16, "plain"),      # 图例字体设置
+  font.x = c(16, "plain", "black"),  # x轴标签字体设置
+  font.y = c(16, "plain", "black"),  # y轴标签字体设置
+  font.xtickslab = c(12, "plain", "black"),  # x轴刻度标签字体设置
+  font.ytickslab = c(12, "plain", "black"),  # y轴刻度标签字体设置
+  risk.table = T,                            # 显示risk.table
+  risk.table.title = "Number at risk",       # risk.table标题
+  risk.table.fontsize = 4,                   # risk.table字体大小
+  risk.table.col = "strata",                 # risk.table文字颜色
+  risk.table.y.text = TRUE,                  # risk.table y轴文字
+  tables.y.text = FALSE,
+  risk.table.height = 0.25,                  # risk.table占图片比例
+  surv.plot.height = 0.75,                   # 生存图占图片比例
+  title = "",                                # 自定义主标题
+  font.main = c(16, "bold"))                 # 主标题字体设置
+
+ggsurv1$table <- ggsurv1$table + labs(x = NULL, y = NULL)
+ggsurv1$plot <- ggsurv1$plot + theme(plot.title = element_text(hjust = .5)) + 
+  annotate("text", x = 365, y = 0.25, label = "HR = 1.28 (1.11-1.47); P < 0.001",  #自定义添加文字标签"HR = 1.28 (1.11-1.47); P < 0.001"
+           cex=5, vjust=0.5, hjust = 0, fontface=2, col="black")
+ggsurv1
+pdf(file="./5.2. Survival_Curves_Surgery.pdf", width=8, height=6, onefile = FALSE)
+ggsurv1
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0。
+
+
+
+### 5.3 多分组生存曲线比较
+fit2 = survfit(Surv(time, status) ~ rx, data = colon)
+fit2
+# 两两比较的Log-rank检验
+pairwise_survdiff <- pairwise_survdiff(Surv(time, status) ~ rx, data = colon)
+pairwise_survdiff
+# 寿命表法查看不同时间点的生存概率及95% CI
+summary(fit2)
+summary(fit2, times = c(365,730,1085,1825,2920)) # 特定时间点的生存概率及95% CI
+# 绘制粗略的KM曲线
+ggsurv2 <- ggsurvplot (fit2, palette = "nejm")
+ggsurv2
+# 绘制调整优化的KM曲线
+ggsurv2 <- ggsurvplot(
+  fit = fit2,
+  pval = F, pval.size = 4, pval.coord = c(730, .25), # 显示p-value of log-rank test,可调整字体大小和位置.
+  conf.int = TRUE,             # 显示生存曲线置信区间
+  conf.int.alpha=c(0.1),       # 生存曲线置信区间透明度
+  surv.median.line = "hv",   # 在中位生存时间点处绘制水平或垂直线的字符向量；可用值有"none"、"hv"、"h"、"v"；其中v绘制垂直线，h绘制水平线。
+  palette = "nejm",            # 设置生存曲线的颜色，这里用的nejm配色
+  xlim = c(0,3000),            # 自定义x轴（时间）显示范围
+  ylim = c(0, 1.02),           # 自定义y轴（生存概率）显示范围
+  axes.offset = TRUE,          # 坐标轴原点是否交叉
+  xlab = "Time in days",       # x轴标签
+  ylab = "Survival probability",   # y轴标签
+  break.time.by = 365,             # x轴（时间）间隔
+  surv.scale = "percent",          # 生存概率用百分比显示
+  censor.shape="|", censor.size = 2, # 删失线形状和大小
+  legend = c(0.8, 0.8),         # 改变legend的位置为c(0.8, 0.85),也可以设为"top","right"
+  legend.labs = c("Obs","Lev","Lev+5FU"), # 图例标签
+  legend.title = "rx",                    # 图例标题
+  font.legend = c(16, "plain"),      # 图例字体设置
+  font.x = c(16, "plain", "black"),  # x轴标签字体设置
+  font.y = c(16, "plain", "black"),  # y轴标签字体设置
+  font.xtickslab = c(12, "plain", "black"),  # x轴刻度标签字体设置
+  font.ytickslab = c(12, "plain", "black"),  # y轴刻度标签字体设置
+  risk.table = T,                            # 显示risk.table
+  risk.table.title = "Number at risk",       # risk.table标题
+  risk.table.fontsize = 4,                   # risk.table字体大小
+  risk.table.col = "strata",                 # risk.table文字颜色
+  risk.table.y.text = TRUE,                  # risk.table y轴文字
+  tables.y.text = FALSE,
+  risk.table.height = 0.25,                  # risk.table占图片比例
+  surv.plot.height = 0.75,                   # 生存图占图片比例
+  title = "",                                # 自定义主标题
+  font.main = c(16, "bold"))                 # 主标题字体设置
+
+ggsurv2$table <- ggsurv2$table + labs(x = NULL, y = NULL)
+ggsurv2$plot <- ggsurv2$plot + theme(plot.title = element_text(hjust = .5)) + 
+  annotate("text", x = 200, y = 0.25, label = "HR = 1.28 (1.11-1.47); P < 0.001",  #自定义添加文字标签"HR = 1.28 (1.11-1.47); P < 0.001"
+           cex=5, vjust=0.5, hjust = 0, fontface=2, col="black")
+ggsurv2
+pdf(file="./5.3. Survival_Curves_rx.pdf", width=8, height=6, onefile = FALSE)
+ggsurv2
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0。
+
+
+
+### 5.4 生存曲线拼图
+splots <- list()
+splots[[1]] <- ggsurv1
+splots[[2]] <- ggsurv2
+splots[[3]] <- ggsurv1
+splots[[4]] <- ggsurv2
+ggsurv <- arrange_ggsurvplots(splots, ncol = 2, nrow = 2, risk.table.height = 0.25, print = FALSE)
+ggsurv
+pdf(file="./5.4. Survival_Curves_Merged.pdf", width=12, height=12, onefile = FALSE)
+ggsurv
+dev.off() #这一步很重要，不可省略，否则pdf文件打开是空白的，文件大小为0。
+  
