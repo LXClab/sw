@@ -1,0 +1,144 @@
+library(dplyr)#解决最常见的数据操作
+library(Seurat)#4.0版本介绍https://satijalab.org/seurat/  ，能够帮助识别和解释单细胞转录组测量的异质性来源，并整合不同类型的单细胞数据
+library(patchwork)#将不同的ggplot组合到同一个图形中，
+
+
+#========设置Seurat对象=======
+# 加载PBMC数据集
+pbmc.data <- Read10X(data.dir = "D:/R/filtered_gene_bc_matrices/hg19/")
+# 使用原始数据(非规范化数据)初始化Seurat对象.
+pbmc <- CreateSeuratObject(counts = pbmc.data, project = "pbmc3k", min.cells = 3, min.features = 200)
+pbmc
+#检查前30个细胞中的一些基因
+pbmc.data[c("CD3D", "TCL1A", "MS4A1"), 1:30]
+#由于scRNA-seq矩阵中的大多数值都是0，所以Seurat尽可能使用稀疏矩阵表示
+dense.size <- object.size(as.matrix(pbmc.data))
+dense.size
+sparse.size <- object.size(pbmc.data)
+sparse.size
+#稀疏与总体的比
+dense.size/sparse.size
+
+
+#==========QC和筛选细胞作进一步分析==========
+#  PercentageFeatureSet()函数能够轻松计算属于每个单元格可能特征子集的所有计数的百分比
+#操作符[[]]可以向对象元数据中添加列，存放QC数据
+pbmc[["percent.mt"]] <- PercentageFeatureSet(pbmc, pattern = "^MT-")
+head(pbmc@meta.data, 5)
+# 把QC指标想象成小提琴图
+VlnPlot(pbmc, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"), ncol = 3)
+#FeatureScatter通常用于可视化特征-特征关系，但也可以用于对象计算的任何内容，例如对象元数据中的列，PC分数等
+plot1 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "percent.mt")
+plot2 <- FeatureScatter(pbmc, feature1 = "nCount_RNA", feature2 = "nFeature_RNA")
+plot1 + plot2
+pbmc <- subset(pbmc, subset = nFeature_RNA > 200 & nFeature_RNA < 2500 & percent.mt < 5)
+
+
+#============归规范化数据=============
+#使用全局缩放归一化方法“LogNormalize”，该方法通过总表达式对每个单元的特征表达式测量进行归一化
+#再将其乘以一个比例因子(默认为10,000)，然后对结果进行对数转换
+pbmc <- NormalizeData(pbmc, normalization.method = "LogNormalize", scale.factor = 10000)
+pbmc <- NormalizeData(pbmc)
+
+
+#============高变量特征的识别(特征选择)============= 
+#改进之处：通过直接建模单单元数据中固有的均值-方差关系，使用FindVariableFeatures()函数实现
+#FindVariableFeatures()识别“平均变异性图”上的异常值特征
+pbmc <- FindVariableFeatures(pbmc, selection.method = "vst", nfeatures = 2000)
+
+#找出10个最易变的基因
+top10 <- head(VariableFeatures(pbmc), 10)
+
+#绘制带有和不带有标签的可变特征
+plot1 <- VariableFeaturePlot(pbmc)
+plot2 <- LabelPoints(plot = plot1, points = top10, repel = TRUE)
+plot1 + plot2
+
+#=========缩放数据==========
+all.genes <- rownames(pbmc)
+#ScaleData()缩放和集中数据集中的特征
+pbmc <- ScaleData(pbmc, features = all.genes)
+#使用ScaleData()函数从单元数据集中删除不需要的变化源
+pbmc <- ScaleData(pbmc, vars.to.regress = "percent.mt")
+
+
+#========执行线性降维=====
+#运行PCA降维
+#npcs：要计算和存储的主成分（PC）总数（默认50）； 
+#verbose：输出与主成分（PC）相关的主要基因，FALSE不显示结果，TRUE显示结果
+pbmc <- RunPCA(pbmc, features = VariableFeatures(object = pbmc))
+#用几种不同的方法检查和可视化PCA结果
+print(pbmc[["pca"]], dims = 1:5, nfeatures = 5)
+VizDimLoadings(pbmc, dims = 1:2, reduction = "pca")
+#DimPlot()将降维输出结果，绘制为二维散点图，其中每个点都是一个细胞
+#reduction:要使用哪种降维方式,（umap，tsne，PCA）
+DimPlot(pbmc, reduction = "pca")
+#DimHeatmap主成分热图
+# dims显示的主成分
+#cells细胞数量
+# balanced输出相同数目的基因
+DimHeatmap(pbmc, dims = 1, cells = 500, balanced = TRUE)
+DimHeatmap(pbmc, dims = 1:15, cells = 500, balanced = TRUE)
+
+
+#=======确定数据集的“维度”==========
+# 随机排列数据子集，并计算这些“随机”基因的预测PCA得分
+#然后将“随机”基因的PCA得分与观察到的PCA得分进行比较，以确定统计学意义。最终结果是每个基因与每个主成分关联的p值
+pbmc <- JackStraw(pbmc, num.replicate = 100)
+#ScoreJackStraw()显示显著的PCs的p值分布；
+#dims显示主成分数量；
+pbmc <- ScoreJackStraw(pbmc, dims = 1:20)
+#JackStrawPlot()函数提供了一个可视化工具，用于将每个PC的p值分布与均匀分布(虚线)进行比较
+#绘制JackStraw分析结果,对于每个PC绘图，比较每个PC上所有基因的p值分布，并与均匀分布进行比较。还确定每个PC的总体重要性的p值
+JackStrawPlot(pbmc, dims = 1:15)
+#ElbowPlot()可用于减少计算时间
+ElbowPlot(pbmc)
+
+
+#=====进行细胞聚类======
+#使用FindNeighbors计算k近邻，然后使用FindClusters聚类
+#将先前定义的数据集维度(前10个pc)输入
+#基于PCA空间中的欧氏距离构造一个KNN图，并基于其局部邻域的共享重叠(Jaccard相似度)细化任意两个细胞之间的边缘权重
+pbmc <- FindNeighbors(pbmc, dims = 1:10)
+#模块化优化技术
+pbmc <- FindClusters(pbmc, resolution = 0.5)
+head(Idents(pbmc), 5)
+
+
+#========运行非线性降维(UMAP/tSNE)==========
+# 通过reticulate::py_install(packages = ' UMAP -learn')安装UMAP
+#执行UMAP降维
+#dims.use:使用哪些维度作为输入特征
+pbmc <- RunUMAP(pbmc, dims = 1:10)
+DimPlot(pbmc, reduction = "umap")
+saveRDS(pbmc, file = "D:/R/pbmc_tutorial.rds")
+
+
+#========寻找差异表达特征(聚类生物标记物)==========
+# FindMarkers在已知类别中计算差异基因
+#ident.1：需要显示类别（1,2…）;
+#min.pct：设置基因在大部分细胞的表达比例，旨在过滤那些很少表达的基因，默认是0.1
+cluster2.markers <- FindMarkers(pbmc, ident.1 = 2, min.pct = 0.25)
+head(cluster2.markers, n = 5)
+cluster5.markers <- FindMarkers(pbmc, ident.1 = 5, ident.2 = c(0, 3), min.pct = 0.25)
+head(cluster5.markers, n = 5)
+#找到每个集群的标记与所有其余细胞比较，只报告阳性的细胞
+pbmc.markers <- FindAllMarkers(pbmc, only.pos = TRUE, min.pct = 0.25, logfc.threshold = 0.25)
+pbmc.markers %>%
+  group_by(cluster) %>%
+  slice_max(n = 2, order_by = avg_log2FC)
+cluster0.markers <- FindMarkers(pbmc, ident.1 = 0, logfc.threshold = 0.25, test.use = "roc", only.pos = TRUE)
+#VlnPlot()(显示跨集群的表达式概率分布)和FeaturePlot()(在tSNE或PCA图上可视化特征表达）
+VlnPlot(pbmc, features = c("MS4A1", "CD79A"))
+VlnPlot(pbmc, features = c("NKG7", "PF4"), slot = "counts", log = TRUE)
+FeaturePlot(pbmc, features = c("MS4A1", "GNLY", "CD3E", "CD14", "FCER1A", "FCGR3A", "LYZ", "PPBP", "CD8A"))
+pbmc.markers %>%
+  group_by(cluster) %>%
+  top_n(n = 10, wt = avg_log2FC) -> top10
+DoHeatmap(pbmc, features = top10$gene) + NoLegend()
+new.cluster.ids <- c("Naive CD4 T", "CD14+ Mono", "Memory CD4 T", "B", "CD8 T", "FCGR3A+ Mono",
+                     "NK", "DC", "Platelet")
+names(new.cluster.ids) <- levels(pbmc)
+pbmc <- RenameIdents(pbmc, new.cluster.ids)
+DimPlot(pbmc, reduction = "umap", label = TRUE, pt.size = 0.5) + NoLegend()
+#还建议使用RidgePlot()、CellScatter()和DotPlot()作为查看数据集的附加方法
