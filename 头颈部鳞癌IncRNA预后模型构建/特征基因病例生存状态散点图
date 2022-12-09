@@ -1,0 +1,27 @@
+####特征基因病例生存状态散点图
+setwd("I:\\HNSC\\km+cox+lasso\\")
+data<-read.csv("lnc_km_cox_lasso_gene_updown.csv",sep=",",header=T)###读取特征基因集列表
+file3<-read.csv("HNSC_lnc_survival.csv",sep=",",header=T)
+fd<-file3[,c(1:4,match(data[,1],colnames(file3)))]######匹配出基因集对应的生存信息
+
+
+library(survival)
+library(survminer)
+library(rms)
+library(ggrisk)
+fd2<-fd[,-c(1,3)]
+colnames(fd2)[1]<-c("status")
+colnames(fd2)[2]<-c("time")
+head(fd2)
+fit<- cph(Surv(time,status) ~ ENSG00000280254+ ENSG00000214401+ENSG00000272273, data = fd2)########对特征基因集做多因素cox回归
+
+
+
+pdf("3-gene-散点图.pdf")
+ggrisk(fit,
+       cutoff.value='median', 
+       cutoff.x = 150,  #“cutoff”文本的水平位置
+       cutoff.y = -1  #“cutoff”文本的垂直位置
+       )
+
+dev.off()
